@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "image": "./assets/img/hero/hero.webp",
+    "atmosphereImage": "",
+    "descriptor": "Brief guild identity statement goes here.",
+    "badges": [
+      "Recruitment Open",
+      "Cross-Platform",
+      "Community Focused"
+    ]
+  },
+
+  "bulletins": [
+    {
+      "pinned": true,
+      "type": "event",
+      "typeLabel": "Event",
+      "title": "Featured update title goes here.",
+      "summary": "Brief description of what this featured update is about.",
+      "date": "YYYY-MM-DD",
+      "image": "./assets/img/bulletins/featured.webp",
+      "href": "#"
+    },
+    {
+      "type": "raffle",
+      "typeLabel": "Raffle",
+      "title": "Update title goes here.",
+      "summary": "Short description of the raffle or reward.",
+      "date": "YYYY-MM-DD",
+      "image": "./assets/img/bulletins/raffle.webp",
+      "href": "#"
+    },
+    {
+      "type": "announcement",
+      "typeLabel": "Announcement",
+      "title": "Update title goes here.",
+      "summary": "Short description of the announcement.",
+      "date": "YYYY-MM-DD",
+      "image": "./assets/img/bulletins/announcement.webp",
+      "href": "#"
+    },
+    {
+      "type": "member",
+      "typeLabel": "Member",
+      "title": "Update title goes here.",
+      "summary": "Short description of the member-related update.",
+      "date": "YYYY-MM-DD",
+      "image": "./assets/img/bulletins/member.webp",
+      "href": "#"
+    }
+  ],
+
+  "tiles": [
+    {
+      "title": "Join the Guild",
+      "subtitle": "How to join, expectations, and basic requirements.",
+      "image": "./assets/img/tiles/join.webp",
+      "alt": "Join the guild",
+      "href": "./join.html",
+      "label": "Join"
+    },
+    {
+      "title": "Ranks & Progression",
+      "subtitle": "Guild ranks, roles, and advancement structure.",
+      "image": "./assets/img/tiles/ranks.webp",
+      "alt": "Ranks and progression",
+      "href": "./ranks.html",
+      "label": "Ranks"
+    },
+    {
+      "title": "Leaders Hall",
+      "subtitle": "Leadership team and responsibilities.",
+      "image": "./assets/img/tiles/leaders.webp",
+      "alt": "Guild leaders",
+      "href": "./leaders.html",
+      "label": "Leaders"
+    },
+    {
+      "title": "Guild Codex",
+      "subtitle": "Rules, culture, and community guidelines.",
+      "image": "./assets/img/tiles/codex.webp",
+      "alt": "Guild codex",
+      "href": "./codex.html",
+      "label": "Codex"
+    }
+  ],
+
+  "spotlight": {
+    "tag": "Spotlight",
+    "title": "Spotlight title goes here.",
+    "summary": "Brief description of what the spotlight feature is highlighting.",
+    "image": "./assets/img/featured/spotlight.webp",
+    "href": "#"
+  },
+
+  "gallery": [
+    {
+      "image": "./assets/img/gallery/gallery-01.webp",
+      "alt": "Gallery image description"
+    },
+    {
+      "image": "./assets/img/gallery/gallery-02.webp",
+      "alt": "Gallery image description"
+    },
+    {
+      "image": "./assets/img/gallery/gallery-03.webp",
+      "alt": "Gallery image description"
+    },
+    {
+      "image": "./assets/img/gallery/gallery-04.webp",
+      "alt": "Gallery image description"
+    },
+    {
+      "image": "./assets/img/gallery/gallery-05.webp",
+      "alt": "Gallery image description"
+    },
+    {
+      "image": "./assets/img/gallery/gallery-06.webp",
+      "alt": "Gallery image description"
+    },
+    {
+      "image": "./assets/img/gallery/gallery-07.webp",
+      "alt": "Gallery image description"
+    },
+    {
+      "image": "./assets/img/gallery/gallery-08.webp",
+      "alt": "Gallery image description"
+    }
+  ],
+
+  "footer": {
+    "text": "Guild site for Mōchirīī • Where Winds Meet"
+  }
+}
