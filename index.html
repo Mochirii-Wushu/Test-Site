@@ -1,0 +1,132 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Winds Meet — Acrobatics Showcase</title>
+  <meta name="description" content="Flashy wuxia acrobatics inspired by Where Winds Meet aesthetics." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="ink"></div>
+    <div class="aurora"></div>
+    <div class="mist"></div>
+    <div class="mountains"></div>
+    <div class="lanterns"></div>
+  </div>
+
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="sigil" aria-hidden="true"></span>
+      <div>
+        <div class="title">Winds Meet Acrobatics</div>
+        <div class="sub">Chinese martial arts motions • neon qi • ink-wash night</div>
+      </div>
+    </div>
+
+    <div class="controls" role="group" aria-label="Display controls">
+      <button id="toggleTrails" class="btn" type="button">Qi Trails: On</button>
+      <button id="toggleParticles" class="btn" type="button">Particles: On</button>
+      <button id="toggleCamera" class="btn" type="button">Parallax: On</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="copy">
+        <h1>Flashy, grounded acrobatics.</h1>
+        <p>
+          This page cycles stylized silhouettes through named, real movement archetypes from Chinese martial arts
+          and performance traditions (wushu/Chinese opera acrobatics). It’s an aesthetic homage, not motion-capture.
+        </p>
+
+        <div class="moveCard" aria-live="polite">
+          <div class="moveLabel">Current sequence</div>
+          <div class="moveName" id="moveName">腾空飞踢 — Aerial Flying Kick</div>
+          <div class="moveDesc" id="moveDesc">
+            Explosive takeoff, knee chamber, extension at apex, controlled landing.
+          </div>
+
+          <div class="pillRow" aria-hidden="true">
+            <span class="pill">ink</span>
+            <span class="pill">qi</span>
+            <span class="pill">lantern glow</span>
+            <span class="pill">wuxia pacing</span>
+          </div>
+        </div>
+
+        <div class="hint">
+          Mouse/touch to “pull” qi ribbons. Spacebar to freeze/unfreeze the acrobat.
+        </div>
+      </div>
+
+      <div class="stage" aria-label="Animated martial arts silhouettes">
+        <div class="ring" aria-hidden="true"></div>
+
+        <div class="acrobat" id="acrobat" aria-hidden="true">
+          <div class="shadow"></div>
+
+          <!-- Simple silhouette body (CSS-only) -->
+          <div class="body">
+            <div class="torso"></div>
+            <div class="head"></div>
+
+            <div class="arm armL"></div>
+            <div class="arm armR"></div>
+
+            <div class="leg legL"></div>
+            <div class="leg legR"></div>
+
+            <div class="sash"></div>
+            <div class="qiAura"></div>
+          </div>
+        </div>
+
+        <div class="floor" aria-hidden="true"></div>
+        <div class="callout" aria-hidden="true">
+          <div class="calloutTitle">Movement notes</div>
+          <div class="calloutText" id="calloutText">
+            Emphasis: clean lines, full extension, soft landing mechanics.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>What you’re seeing</h2>
+        <p>
+          The silhouette is a stylized “training dummy” that runs timed keyframe sets designed to resemble
+          archetypal lines from Chinese wushu basics and acrobatic vocabulary. Qi trails and particles are canvas FX.
+        </p>
+      </article>
+
+      <article class="panel">
+        <h2>GitHub Pages compliant</h2>
+        <p>
+          No build tools, no external assets required. Everything is relative-path and runs as static files.
+          You can drop these three files into any repo and enable Pages.
+        </p>
+      </article>
+
+      <article class="panel">
+        <h2>Performance friendly</h2>
+        <p>
+          Respects reduced-motion preferences. Toggles let you disable heavy FX. The page degrades gracefully.
+        </p>
+      </article>
+    </section>
+
+    <footer class="foot">
+      <div>Made for static hosting. Tune colors, timing, and move sets in <span class="mono">script.js</span>.</div>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
