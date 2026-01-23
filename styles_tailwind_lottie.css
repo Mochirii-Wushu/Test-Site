@@ -1,0 +1,296 @@
+/* =========================================================
+   Mōchirīī — Where Winds Meet Guild
+   styles.css (Tailwind + Lottie Edition)
+   Keep: theme tokens + background layers + a11y helpers
+   ========================================================= */
+
+/* ---------- Theme tokens ---------- */
+:root{
+  /* Glass surface tokens */
+  --glass-a: rgba(7,8,11,.74);
+  --glass-b: rgba(7,8,11,.32);
+
+  --bg-0:#07080b;
+  --bg-1:#0b0f14;
+  --bg-2:#0f1620;
+
+  --text:#eaeef6;
+  --muted:#b7c0cf;
+
+  --jade:#0fbf9b;
+  --jade-2:#0a7e6a;
+
+  --gold:#d9b36a;
+  --gold-2:#a07a37;
+
+  --maroon:#6b1f2a;
+  --maroon-2:#9a2d3c;
+
+  --frost:#a8d7ff;
+  --paper:#e9e2d2;
+
+  --grain: .035;
+}
+
+/* Lantern theme */
+html[data-theme="lantern"]{
+  --muted:#bcc6d6;
+  --paper:#eadfcb;
+  --grain: .040;
+}
+
+/* Moon theme */
+html[data-theme="moon"]{
+  --bg-0:#05060a;
+  --bg-1:#070a12;
+  --bg-2:#0a1020;
+
+  --text:#eef2fb;
+  --muted:#b5c2d8;
+
+  --jade:#16d3ae;
+  --jade-2:#0ea08a;
+
+  --gold:#c9b07b;
+  --gold-2:#9c8550;
+
+  --maroon:#5d1a24;
+  --maroon-2:#8d2a37;
+
+  --frost:#b9e5ff;
+  --paper:#f0eadb;
+
+  --grain: .030;
+}
+
+html,body{ height:100%; }
+html{ background-color: var(--bg-0); }
+a{ color:inherit; text-decoration:none; }
+
+/* ---------- Skip link (a11y) ---------- */
+.skip-link{
+  position:absolute;
+  left:10px;
+  top:10px;
+  z-index:9999;
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.18);
+  background: rgba(0,0,0,.65);
+  transform: translateY(-140%);
+  transition: transform .18s ease;
+}
+.skip-link:focus{ transform: translateY(0); }
+
+/* ---------- Focus rings ---------- */
+:focus-visible{
+  outline: 3px solid rgba(168,215,255,.58);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+
+/* ---------- Background layers (photo + ink + grain) ---------- */
+.bg-photo{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: url("./assets/bg/wuxia-bg.png") center / cover no-repeat;
+}
+
+.bg-ink, .bg-ink-2, .bg-grain{
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bg-ink{
+  opacity:.55;
+  background:
+    radial-gradient(900px 600px at 25% 25%, rgba(255,255,255,.06), transparent 60%),
+    radial-gradient(850px 600px at 75% 30%, rgba(15,191,155,.08), transparent 55%),
+    radial-gradient(900px 700px at 55% 75%, rgba(217,179,106,.08), transparent 60%),
+    radial-gradient(700px 500px at 20% 80%, rgba(154,45,60,.06), transparent 55%);
+  animation: drift 18s ease-in-out infinite alternate;
+  filter: blur(.2px);
+}
+
+.bg-ink-2{
+  opacity:.26;
+  background:
+    radial-gradient(700px 520px at 70% 60%, rgba(15,191,155,.10), transparent 65%),
+    radial-gradient(780px 560px at 30% 70%, rgba(168,215,255,.10), transparent 67%),
+    radial-gradient(560px 420px at 60% 20%, rgba(217,179,106,.08), transparent 65%);
+  animation: drift2 26s ease-in-out infinite alternate;
+  filter: blur(.35px);
+}
+
+.bg-grain{
+  opacity: var(--grain);
+  mix-blend-mode: overlay;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.06), rgba(255,255,255,.06) 1px, transparent 1px, transparent 2px),
+    repeating-linear-gradient(90deg, rgba(0,0,0,.06), rgba(0,0,0,.06) 1px, transparent 1px, transparent 3px);
+  transform: translateZ(0);
+}
+
+@keyframes drift{
+  from{ transform: translate3d(-1.2%, -0.8%, 0) scale(1.02); }
+  to{ transform: translate3d(1.2%, 0.9%, 0) scale(1.06); }
+}
+@keyframes drift2{
+  from{ transform: translate3d(1.4%, -0.6%, 0) scale(1.01); }
+  to{ transform: translate3d(-1.1%, 1.1%, 0) scale(1.05); }
+}
+
+/* ---------- Keep your existing “clean” charter list styling ---------- */
+ul.clean{
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(232,230,223,.98);
+}
+ul.clean li{
+  margin: 0 0 1rem 0;
+  position: relative;
+  padding-left: 1.25rem;
+  color: rgba(234,238,246,.86);
+}
+ul.clean li::before{
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  color: rgba(217,179,106,.88);
+  font-size: 0.85rem;
+}
+ul.clean strong{
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+/* ---------- Theme toggle (kept as a small CSS component) ---------- */
+.theme-toggle{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.18);
+}
+.theme-toggle span{
+  font-size:12px;
+  color: rgba(234,238,246,.84);
+}
+.toggle{
+  width:46px;
+  height:26px;
+  border-radius: 999px;
+  border:1px solid rgba(255,255,255,.14);
+  background:
+    radial-gradient(10px 10px at 22% 50%, rgba(240,234,219,.85), transparent 62%),
+    linear-gradient(135deg, rgba(15,191,155,.35), rgba(217,179,106,.18));
+  position:relative;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.22);
+}
+.toggle::after{
+  content:"";
+  position:absolute;
+  top:3px;
+  left:3px;
+  width:20px;
+  height:20px;
+  border-radius:999px;
+  background:
+    radial-gradient(10px 10px at 30% 30%, rgba(255,255,255,.22), transparent 62%),
+    linear-gradient(180deg, rgba(240,234,219,.90), rgba(240,234,219,.55));
+  box-shadow: 0 10px 20px rgba(0,0,0,.35);
+  transition: transform .18s ease;
+}
+html[data-theme="moon"] .toggle::after{ transform: translateX(20px); }
+
+/* ---------- Sticky CTA (kept from your original styling) ---------- */
+.sticky-cta{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 80;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding:12px;
+  border-radius: 18px;
+  border:1px solid rgba(255,255,255,.12);
+  background:
+    radial-gradient(240px 120px at 30% 20%, rgba(15,191,155,.12), transparent 60%),
+    radial-gradient(260px 140px at 80% 70%, rgba(217,179,106,.10), transparent 62%),
+    rgba(0,0,0,.40);
+  box-shadow: 0 22px 70px rgba(0,0,0,.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 240px;
+}
+.sticky-cta .small{
+  margin:0;
+  font-size:12px;
+  color: rgba(183,192,207,.92);
+}
+.sticky-cta .cta-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+/* Small helper for your existing sticky CTA buttons */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:12px 14px;
+  border-radius:14px;
+  font-size:14px;
+  font-weight:650;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.04);
+  transition: transform .12s ease, border-color .12s ease, background .12s ease, filter .12s ease;
+  white-space:nowrap;
+}
+.btn:hover{ transform: translateY(-1px); border-color:rgba(255,255,255,.22); background:rgba(255,255,255,.06); }
+.btn:active{ transform: translateY(0); filter: brightness(.98); }
+.btn.primary{
+  border-color: rgba(15,191,155,.40);
+  background: linear-gradient(135deg, rgba(15,191,155,.65), rgba(217,179,106,.32));
+}
+.btn.small{ padding:9px 10px; font-size:12px; border-radius:12px; }
+
+@media (max-width: 640px){
+  .sticky-cta{
+    right: 12px;
+    left: 12px;
+    bottom: 12px;
+    max-width:none;
+    border-radius: 18px;
+  }
+}
+
+/* ---------- Reduced motion support ---------- */
+@media (prefers-reduced-motion: reduce){
+  .bg-ink,
+  .bg-ink-2{
+    animation:none;
+  }
+  .toggle::after{
+    transition:none;
+  }
+}
+
+/* Leaders page background override */
+body.leaders-page .bg-photo{
+  background: url("./assets/bg/wuxia-bg-winter.png") center / cover no-repeat;
+}
