@@ -38,15 +38,6 @@
       "date": "YYYY-MM-DD",
       "image": "./assets/img/bulletins/announcement.webp",
       "href": "#"
-    },
-    {
-      "type": "member",
-      "typeLabel": "Member",
-      "title": "Update title goes here.",
-      "summary": "Short description of the member-related update.",
-      "date": "YYYY-MM-DD",
-      "image": "./assets/img/bulletins/member.webp",
-      "href": "#"
     }
   ],
 
