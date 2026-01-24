@@ -1,0 +1,92 @@
+{
+  "hero": {
+    "image": "./assets/img/ranks/hero.webp",
+    "title": "Ranks & Progression",
+    "description": "An overview of how roles, responsibility, and trust grow within the Mōchirīī guild.",
+    "pill": "Growth, contribution, and harmony guide advancement."
+  },
+
+  "ladder": {
+    "image": "./assets/img/ranks/ladder.webp",
+    "title": "The Path of Progression",
+    "description": "Each rank reflects experience, responsibility, and contribution to the guild.",
+    "captionTitle": "Understanding the Ladder",
+    "caption": "Progression is earned through consistency, cooperation, and care for the community rather than competition."
+  },
+
+  "tiers": {
+    "senior": {
+      "title": "Senior Leadership",
+      "description": "Those entrusted with direction, long-term vision, and stewardship of the guild.",
+      "badge": "Direction & Stewardship",
+      "image": "./assets/img/ranks/senior.webp",
+      "note": "Members may approach this tier for major decisions, guidance, or conflict resolution.",
+      "ranks": [
+        {
+          "name": "Guild Leader",
+          "description": "Holds final responsibility for guild direction, culture, and long-term goals."
+        },
+        {
+          "name": "Vice Leader",
+          "description": "Supports leadership operations and ensures continuity across activities."
+        },
+        {
+          "name": "Hall Leader",
+          "description": "Oversees specific halls or groups, guiding members and maintaining order."
+        }
+      ]
+    },
+
+    "middle": {
+      "title": "Middle Leadership",
+      "description": "Veteran members who safeguard community culture and provide day-to-day guidance.",
+      "badge": "Guardianship & Mentorship",
+      "image": "./assets/img/ranks/middle.webp",
+      "note": "This tier supports both leadership and newer members, helping maintain balance.",
+      "ranks": [
+        {
+          "name": "Dharmapala",
+          "description": "Protects guild values, fairness, and respectful conduct."
+        },
+        {
+          "name": "Lotus Warden",
+          "description": "Provides stability, guidance, and assistance to members in need."
+        },
+        {
+          "name": "Petal Keeper",
+          "description": "Supports daily activity, community engagement, and guild harmony."
+        }
+      ]
+    },
+
+    "members": {
+      "title": "Members",
+      "description": "The heart of the guild, where growth, learning, and camaraderie begin.",
+      "badge": "Growth & Fellowship",
+      "image": "./assets/img/ranks/members.webp",
+      "note": "Advancement is based on participation, kindness, and steady involvement.",
+      "ranks": [
+        {
+          "name": "Mochi Blossom",
+          "description": "An active and dependable member contributing positively to the guild."
+        },
+        {
+          "name": "Young Bamboo",
+          "description": "A growing member learning systems, culture, and teamwork."
+        },
+        {
+          "name": "Softwind",
+          "description": "A new arrival becoming familiar with the guild and its rhythm."
+        },
+        {
+          "name": "Rice Sprout",
+          "description": "A freshly joined member beginning their journey in Mōchirīī."
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "text": "Ranks are not a measure of worth, but a reflection of trust, time, and contribution within the guild."
+  }
+}
