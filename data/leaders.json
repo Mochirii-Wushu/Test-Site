@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "image": "./assets/img/leaders/hero.webp"
+  },
+
+  "leaders": [
+    {
+      "role": "Leader",
+      "name": "Guild Leader",
+      "availability": "Primary point of direction",
+      "image": "./assets/img/leaders/leader.webp",
+      "alt": "Guild Leader portrait",
+      "summary": "Oversees the vision, culture, and long-term direction of Mōchirīī. Ensures harmony, growth, and clarity across all guild activities.",
+      "contacts": []
+    },
+    {
+      "role": "Vice Leader",
+      "name": "Vice Leader",
+      "availability": "Operations & coordination",
+      "image": "./assets/img/leaders/vice-leader.webp",
+      "alt": "Vice Leader portrait",
+      "summary": "Supports leadership operations, assists with planning, and ensures smooth execution of events and member coordination.",
+      "contacts": []
+    },
+    {
+      "role": "Hall Leader",
+      "name": "Hall Leader",
+      "availability": "Hall & group oversight",
+      "image": "./assets/img/leaders/hall-leader.webp",
+      "alt": "Hall Leader portrait",
+      "summary": "Manages specific halls or divisions within the guild, guiding members and maintaining order within their domain.",
+      "contacts": []
+    },
+    {
+      "role": "Dharmapala",
+      "name": "Dharmapala",
+      "availability": "Community guidance",
+      "image": "./assets/img/leaders/dharmapala.webp",
+      "alt": "Dharmapala portrait",
+      "summary": "Guardian of guild values, responsible for maintaining balance, respect, and harmony within the community.",
+      "contacts": []
+    },
+    {
+      "role": "Lotus Warden",
+      "name": "Lotus Warden",
+      "availability": "Member support",
+      "image": "./assets/img/leaders/lotus-warden.webp",
+      "alt": "Lotus Warden portrait",
+      "summary": "Oversees member well-being, assists new arrivals, and helps guide personal development within the guild.",
+      "contacts": []
+    },
+    {
+      "role": "Petal Keeper",
+      "name": "Petal Keeper",
+      "availability": "Culture & activity support",
+      "image": "./assets/img/leaders/petal-keeper.webp",
+      "alt": "Petal Keeper portrait",
+      "summary": "Helps maintain the spirit and atmosphere of the guild, supporting events and community engagement.",
+      "contacts": []
+    },
+    {
+      "role": "Mochi Blossom",
+      "name": "Mochi Blossom",
+      "availability": "Active member",
+      "image": "./assets/img/leaders/mochi-blossom.webp",
+      "alt": "Mochi Blossom portrait",
+      "summary": "A fully integrated member who participates actively and contributes positively to guild life.",
+      "contacts": []
+    },
+    {
+      "role": "Young Bamboo",
+      "name": "Young Bamboo",
+      "availability": "Learning & growth",
+      "image": "./assets/img/leaders/young-bamboo.webp",
+      "alt": "Young Bamboo portrait",
+      "summary": "A developing member learning guild customs, systems, and cooperative play.",
+      "contacts": []
+    },
+    {
+      "role": "Softwind",
+      "name": "Softwind",
+      "availability": "New member",
+      "image": "./assets/img/leaders/softwind.webp",
+      "alt": "Softwind portrait",
+      "summary": "A newly arrived member beginning their journey within Mōchirīī.",
+      "contacts": []
+    },
+    {
+      "role": "Rice Sprout",
+      "name": "Rice Sprout",
+      "availability": "Just joined",
+      "image": "./assets/img/leaders/rice-sprout.webp",
+      "alt": "Rice Sprout portrait",
+      "summary": "Freshly joined member, welcomed and supported as they take their first steps.",
+      "contacts": []
+    }
+  ]
+}

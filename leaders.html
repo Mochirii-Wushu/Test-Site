@@ -1,188 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mōchirīī — Leadership</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Mōchirīī leadership roster and contact points for Where Winds Meet." />
 
-  <link rel="stylesheet" href="styles.css" />
+  <title>Mōchirīī • Leaders Hall</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{
+      --font-display: "Zhi Mang Xing", ui-serif, serif;
+      --font-body: "Noto Serif SC", ui-serif, serif;
+    }
+    html, body { height: 100%; }
+    body { font-family: var(--font-body); }
+  </style>
 </head>
-<body>
 
-<body class="leaders-page">
+<body class="bg-black text-white selection:bg-white/20">
+  <!-- Hero (image-first, no gradients/borders) -->
+  <header class="relative overflow-hidden">
+    <div class="relative min-h-[54vh] sm:min-h-[60vh]">
+      <img
+        id="leadersHeroImage"
+        src="./assets/img/leaders/hero.webp"
+        alt="Leaders Hall banner artwork"
+        class="absolute inset-0 h-full w-full object-cover"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-black/45"></div>
 
-  <div class="bg-photo" aria-hidden="true"></div>
-  <div class="bg-ink" aria-hidden="true"></div>
-  <div class="bg-ink-2" aria-hidden="true"></div>
-  <div class="bg-grain" aria-hidden="true"></div>
+      <div class="relative z-10 flex min-h-[54vh] sm:min-h-[60vh] items-end">
+        <div class="w-full px-4 sm:px-6 lg:px-10 pb-10 sm:pb-14">
+          <div class="max-w-6xl mx-auto">
+            <div class="space-y-4 sm:space-y-5">
+              <div class="space-y-2">
+                <h1 class="font-[var(--font-display)] tracking-[0.02em] text-4xl sm:text-5xl lg:text-6xl leading-[0.95]">
+                  Leaders Hall
+                </h1>
+                <p class="max-w-xl text-sm sm:text-base leading-snug text-white/90">
+                  Brief description of what leadership oversees and how members should reach out.
+                </p>
+              </div>
 
-  <header>
-    <div class="container nav">
-      <div class="brand">
-        <div class="brand-mark"></div>
-        <div class="brand-title">
-          <strong>Mōchirīī</strong>
-          <span>Where Winds Meet</span>
+              <div>
+                <a
+                  href="./index.html"
+                  class="text-sm sm:text-base underline underline-offset-4 decoration-white/40 hover:decoration-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 rounded"
+                >
+                  Back to Home
+                </a>
+              </div>
+
+              <div class="pt-1">
+                <span class="inline-flex bg-black/30 backdrop-blur-md rounded-full px-3 py-1 text-xs sm:text-sm text-white/90">
+                  Brief note about availability or preferred contact method goes here.
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <nav class="navlinks" aria-label="Sections">
-        <a class="link" href="index.html">Home</a>
-        <a class="link" href="leaders.html">Leaders</a>
-      </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main class="px-4 sm:px-6 lg:px-10">
+    <!-- Leadership Grid -->
+    <section class="py-10 sm:py-14 lg:py-20">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-6 sm:mb-8">
+          <h2 class="font-[var(--font-display)] tracking-[0.02em] text-2xl sm:text-3xl lg:text-4xl leading-tight">
+            The Council
+          </h2>
+          <p class="max-w-xl text-sm sm:text-base leading-snug text-white/80">
+            Brief instruction for what member info is shown here and what belongs on individual leader profiles.
+          </p>
+        </div>
 
-    <section class="section">
-      <div class="section-title">
-        <h2 class="h3">Guild Leadership</h2>
-        <p>Guidance, steadiness, and care—held in a deliberate hierarchy.</p>
-      </div>
-
-      <!-- Top (1) -->
-      <div style="display:flex; justify-content:center; margin-top:14px;">
-        <div style="width:min(420px, 100%);">
-          <div class="card rank">
-            <div class="pad">
-
-              <div class="sigil">
-                <div class="mark"></div>
-                <div>
-                  <h4>Guild Leader</h4>
-                  <p>Founder</p>
-                  <p class="p-muted">Twills UID: 1019675341</p>
-                </div>
-              </div>
-
+        <!-- leaders.js can optionally replace this grid by targeting #leadersGrid -->
+        <div
+          id="leadersGrid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7"
+        >
+          <!-- Card 1 -->
+          <article class="group relative overflow-hidden rounded-3xl">
+            <div class="relative aspect-[4/5]">
               <img
-                class="emblem-img"
-                src="assets/leaders/Twills Leader Portrait.png"
-                alt="Guild Leader portrait"
+                src="./assets/img/leaders/leader.webp"
+                alt="Leader portrait"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                loading="lazy"
               />
+              <div class="absolute inset-0 bg-black/35"></div>
 
-              <p class="p-base">
-                Founder and guiding hand of Mōchirīī. Focused on balance, long-term growth,
-                and maintaining harmony between members.
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-rule"></div>
-
-      <!-- Middle (1 Vice + many Hall Leaders) -->
-      <div style="display:flex; justify-content:center; margin-top:18px;">
-        <div style="display:flex; gap:14px; flex-wrap:wrap; justify-content:center; width:100%;">
-
-          <div style="width:min(420px, 100%);">
-            <div class="card rank vice-leader">
-              <div class="pad">
-
-                <div class="sigil">
-                  <div class="mark"></div>
-                  <div>
-                    <h4>Vice Leader</h4>
-                    <p>Community & Guidance</p>
+              <div class="absolute left-5 right-5 bottom-5 sm:left-7 sm:right-7 sm:bottom-7">
+                <div class="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="bg-black/30 backdrop-blur-md rounded-full px-3 py-1 text-xs sm:text-sm text-white/95">
+                      Leader
+                    </span>
+                    <span class="text-xs sm:text-sm text-white/80">
+                      Brief availability note goes here.
+                    </span>
                   </div>
+                  <h3 class="mt-3 text-xl sm:text-2xl leading-tight text-white line-clamp-1">
+                    Leader name goes here.
+                  </h3>
+                  <p class="mt-2 text-sm sm:text-base leading-snug text-white/90 line-clamp-2">
+                    Brief description of responsibilities and leadership focus goes here.
+                  </p>
                 </div>
-
-                <img
-                  class="emblem-img"
-                  src="assets/leaders/vice-leader.jpg"
-                  alt="Vice Leader portrait"
-                />
-
-                <p class="p-base">
-                  Supports members, answers questions, and helps the guild stay welcoming and consistent.
-                </p>
-
               </div>
             </div>
-          </div>
+          </article>
 
-          <div style="width:min(420px, 100%);">
-            <div class="card rank hall-leader">
-              <div class="pad">
+          <!-- Card 2 -->
+          <article class="group relative overflow-hidden rounded-3xl">
+            <div class="relative aspect-[4/5]">
+              <img
+                src="./assets/img/leaders/vice-leader.webp"
+                alt="Vice Leader portrait"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-black/35"></div>
 
-                <div class="sigil">
-                  <div class="mark"></div>
-                  <div>
-                    <h4>Hall Leader</h4>
-                    <p>Operations & Events</p>
+              <div class="absolute left-5 right-5 bottom-5 sm:left-7 sm:right-7 sm:bottom-7">
+                <div class="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="bg-black/30 backdrop-blur-md rounded-full px-3 py-1 text-xs sm:text-sm text-white/95">
+                      Vice Leader
+                    </span>
+                    <span class="text-xs sm:text-sm text-white/80">
+                      Brief availability note goes here.
+                    </span>
                   </div>
+                  <h3 class="mt-3 text-xl sm:text-2xl leading-tight text-white line-clamp-1">
+                    Vice Leader name goes here.
+                  </h3>
+                  <p class="mt-2 text-sm sm:text-base leading-snug text-white/90 line-clamp-2">
+                    Brief description of responsibilities and operational scope goes here.
+                  </p>
                 </div>
-
-                <img
-                  class="emblem-img"
-                  src="assets/leaders/hall-leader.jpg"
-                  alt="Hall Leader portrait"
-                />
-
-                <p class="p-base">
-                  Oversees coordination, activities, and daily flow. Keeps things organized with calm precision.
-                </p>
-
               </div>
             </div>
-          </div>
+          </article>
 
-        </div>
-      </div>
+          <!-- Card 3 -->
+          <article class="group relative overflow-hidden rounded-3xl">
+            <div class="relative aspect-[4/5]">
+              <img
+                src="./assets/img/leaders/hall-leader.webp"
+                alt="Hall Leader portrait"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-black/35"></div>
 
-      <div class="section-rule"></div>
-
-      <!-- Bottom (many Dharmapalas) -->
-      <div style="display:flex; justify-content:center; margin-top:18px;">
-        <div style="display:flex; gap:14px; flex-wrap:wrap; justify-content:center; width:100%;">
-
-          <div style="width:min(420px, 100%);">
-            <div class="card rank dharmapala">
-              <div class="pad">
-
-                <div class="sigil">
-                  <div class="mark"></div>
-                  <div>
-                    <h4>Dharmapala</h4>
-                    <p>Conflict Resolution & Onboarding</p>
-                    <p class="p-muted">Isawisima UID: 2023419228</p>
+              <div class="absolute left-5 right-5 bottom-5 sm:left-7 sm:right-7 sm:bottom-7">
+                <div class="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="bg-black/30 backdrop-blur-md rounded-full px-3 py-1 text-xs sm:text-sm text-white/95">
+                      Hall Leader
+                    </span>
+                    <span class="text-xs sm:text-sm text-white/80">
+                      Brief availability note goes here.
+                    </span>
                   </div>
+                  <h3 class="mt-3 text-xl sm:text-2xl leading-tight text-white line-clamp-1">
+                    Hall Leader name goes here.
+                  </h3>
+                  <p class="mt-2 text-sm sm:text-base leading-snug text-white/90 line-clamp-2">
+                    Brief description of hall scope and member support role goes here.
+                  </p>
                 </div>
-
-                <img
-                  class="emblem-img"
-                  src="assets/leaders/Isawisima Portrait.webp"
-                  alt="Dharmapala portrait"
-                />
-
-                <p class="p-base">
-                  Oversees internal harmony, resolves disputes, and ensures new members integrate smoothly.
-                </p>
-
               </div>
             </div>
-          </div>
-
+          </article>
         </div>
       </div>
-
     </section>
 
+    <!-- Optional: Hall responsibilities (no repeated CTAs) -->
+    <section class="mt-12 sm:mt-16 lg:mt-24 py-10 sm:py-14 lg:py-20">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-6 sm:mb-8">
+          <h2 class="font-[var(--font-display)] tracking-[0.02em] text-2xl sm:text-3xl lg:text-4xl leading-tight">
+            Responsibilities
+          </h2>
+          <p class="max-w-xl text-sm sm:text-base leading-snug text-white/80">
+            Brief description of what members can expect from leadership and what leadership expects from members.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-7">
+          <div class="group relative overflow-hidden rounded-3xl">
+            <div class="relative aspect-[16/10]">
+              <img
+                src="./assets/img/leaders/responsibilities-01.webp"
+                alt="Responsibilities visual panel"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-black/35"></div>
+              <div class="absolute left-5 right-5 bottom-5 sm:left-7 sm:right-7 sm:bottom-7">
+                <div class="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-5">
+                  <h3 class="text-lg sm:text-xl leading-tight text-white line-clamp-1">
+                    Brief responsibility category title goes here.
+                  </h3>
+                  <p class="mt-2 text-sm sm:text-base leading-snug text-white/90 line-clamp-2">
+                    Brief description of what this category covers goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-3xl">
+            <div class="relative aspect-[16/10]">
+              <img
+                src="./assets/img/leaders/responsibilities-02.webp"
+                alt="Responsibilities visual panel"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-black/35"></div>
+              <div class="absolute left-5 right-5 bottom-5 sm:left-7 sm:right-7 sm:bottom-7">
+                <div class="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-5">
+                  <h3 class="text-lg sm:text-xl leading-tight text-white line-clamp-1">
+                    Brief responsibility category title goes here.
+                  </h3>
+                  <p class="mt-2 text-sm sm:text-base leading-snug text-white/90 line-clamp-2">
+                    Brief description of what this category covers goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-3xl">
+            <div class="relative aspect-[16/10]">
+              <img
+                src="./assets/img/leaders/responsibilities-03.webp"
+                alt="Responsibilities visual panel"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-black/35"></div>
+              <div class="absolute left-5 right-5 bottom-5 sm:left-7 sm:right-7 sm:bottom-7">
+                <div class="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-5">
+                  <h3 class="text-lg sm:text-xl leading-tight text-white line-clamp-1">
+                    Brief responsibility category title goes here.
+                  </h3>
+                  <p class="mt-2 text-sm sm:text-base leading-snug text-white/90 line-clamp-2">
+                    Brief description of what this category covers goes here.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <a
+            href="./index.html"
+            class="text-sm sm:text-base underline underline-offset-4 decoration-white/40 hover:decoration-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 rounded"
+          >
+            Return to Home
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="container footer-grid">
-      <p class="small">© Mōchirīī Guild</p>
-
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="leaders.html">Leaders</a>
-      </div>
+  <footer class="px-4 sm:px-6 lg:px-10 pb-10 sm:pb-14">
+    <div class="max-w-6xl mx-auto text-xs sm:text-sm text-white/70">
+      <div>Brief footer metadata goes here.</div>
     </div>
   </footer>
 
+  <!-- Optional renderer: create /data/leaders.json and /leaders.js to populate cards -->
+  <script src="./leaders.js"></script>
 </body>
 </html>
