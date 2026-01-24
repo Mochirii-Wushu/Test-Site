@@ -1,7 +1,7 @@
 {
   "hero": {
     "image": "./assets/img/hero/hero.webp",
-    "atmosphereImage": "./assets/img/hero/atmosphere.webp",
+    "atmosphereImage": "",
     "descriptor": "Brief guild identity statement goes here.",
     "badges": [
       "Recruitment Open",
