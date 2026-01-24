@@ -57,42 +57,6 @@
       "alt": "Petal Keeper portrait",
       "summary": "Helps maintain the spirit and atmosphere of the guild, supporting events and community engagement.",
       "contacts": []
-    },
-    {
-      "role": "Mochi Blossom",
-      "name": "Mochi Blossom",
-      "availability": "Active member",
-      "image": "./assets/img/leaders/mochi-blossom.webp",
-      "alt": "Mochi Blossom portrait",
-      "summary": "A fully integrated member who participates actively and contributes positively to guild life.",
-      "contacts": []
-    },
-    {
-      "role": "Young Bamboo",
-      "name": "Young Bamboo",
-      "availability": "Learning & growth",
-      "image": "./assets/img/leaders/young-bamboo.webp",
-      "alt": "Young Bamboo portrait",
-      "summary": "A developing member learning guild customs, systems, and cooperative play.",
-      "contacts": []
-    },
-    {
-      "role": "Softwind",
-      "name": "Softwind",
-      "availability": "New member",
-      "image": "./assets/img/leaders/softwind.webp",
-      "alt": "Softwind portrait",
-      "summary": "A newly arrived member beginning their journey within Mōchirīī.",
-      "contacts": []
-    },
-    {
-      "role": "Rice Sprout",
-      "name": "Rice Sprout",
-      "availability": "Just joined",
-      "image": "./assets/img/leaders/rice-sprout.webp",
-      "alt": "Rice Sprout portrait",
-      "summary": "Freshly joined member, welcomed and supported as they take their first steps.",
-      "contacts": []
     }
   ]
 }
