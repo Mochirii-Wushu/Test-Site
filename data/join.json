@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "image": "./assets/img/join/hero.webp",
+    "title": "Join Mōchirīī",
+    "description": "Brief description of what joining involves and the general vibe of the guild.",
+    "pill": "Brief note about how quickly new members are welcomed and guided.",
+    "ctaHref": "https://discord.com/invite/dPafqMwWPK"
+  },
+  "panels": {
+    "stepsImage": "./assets/img/join/steps.webp",
+    "stepsCaptionTitle": "Brief image caption title goes here.",
+    "stepsCaption": "Brief note about what this visual represents and how to follow the steps.",
+    "expectationsImage": "./assets/img/join/expectations.webp"
+  },
+  "steps": [
+    {
+      "number": "1",
+      "title": "Enter the Hall",
+      "description": "Brief instruction for what members should do first when joining."
+    },
+    {
+      "number": "2",
+      "title": "Read the Scroll",
+      "description": "Brief instruction for what information to review before participating."
+    },
+    {
+      "number": "3",
+      "title": "Share Your Name & Platform",
+      "description": "Brief instruction for what identification details belong here for coordination."
+    },
+    {
+      "number": "4",
+      "title": "Receive Your Starting Rank",
+      "description": "Brief instruction for how onboarding works and what new members should expect."
+    },
+    {
+      "number": "5",
+      "title": "Meet the Guild",
+      "description": "Brief instruction for how to join events, ask for help, and connect with members."
+    }
+  ],
+  "culture": [
+    {
+      "title": "Respect & Kindness",
+      "description": "Brief description of expected conduct and how the guild maintains a welcoming atmosphere."
+    },
+    {
+      "title": "Activity Rhythm",
+      "description": "Brief description of activity expectations and how leniency is handled."
+    },
+    {
+      "title": "Helping New Members",
+      "description": "Brief description of how members support each other and how questions are encouraged."
+    },
+    {
+      "title": "Events & Updates",
+      "description": "Brief description of how events, raffles, and guild updates are communicated."
+    }
+  ],
+  "footer": {
+    "text": "Brief footer metadata goes here."
+  }
+}
