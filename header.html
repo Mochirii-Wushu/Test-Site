@@ -1,0 +1,170 @@
+<!-- header.html -->
+<header class="px-4 sm:px-6 lg:px-10 pt-6">
+  <div class="max-w-7xl mx-auto">
+    <div
+      class="bg-white/5 backdrop-blur-md rounded-3xl px-4 sm:px-6 py-3 flex items-center justify-between gap-4"
+    >
+      <!-- Brand -->
+      <a href="./index.html" class="flex items-center gap-3 group">
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-2xl bg-black/25"
+          aria-hidden="true"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 3c2.7 3.1 4 6 4 8.7C16 15.2 13.8 18 12 21c-1.8-3-4-5.8-4-9.3C8 9 9.3 6.1 12 3Z"
+              stroke="rgba(255,255,255,0.88)"
+              stroke-width="1.4"
+            />
+            <path
+              d="M5 12.2c2.7-1.2 5.1-1.6 7-1.6s4.3.4 7 1.6"
+              stroke="rgba(255,255,255,0.65)"
+              stroke-width="1.2"
+            />
+          </svg>
+        </span>
+
+        <div>
+          <div
+            class="font-[var(--font-display)] tracking-[0.02em] text-lg sm:text-xl leading-none"
+          >
+            Mōchirīī
+          </div>
+          <div class="mt-1 text-xs sm:text-sm text-white/70">
+            <span data-role="header-subtitle">Where Winds Meet</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav
+        class="hidden md:flex items-center gap-5 text-sm text-white/80"
+        aria-label="Primary"
+      >
+        <a data-nav="home" href="./index.html" class="hover:text-white"
+          >Home</a
+        >
+        <a data-nav="events" href="./events.html" class="hover:text-white"
+          >Events</a
+        >
+        <a data-nav="leaders" href="./leaders.html" class="hover:text-white"
+          >Leaders</a
+        >
+        <a data-nav="ranks" href="./ranks.html" class="hover:text-white"
+          >Ranks</a
+        >
+        <a data-nav="join" href="./join.html" class="hover:text-white"
+          >Join</a
+        >
+        <a data-nav="codex" href="./codex.html" class="hover:text-white"
+          >Codex</a
+        >
+        <a
+          data-nav="recruitment"
+          href="./recruitment.html"
+          class="hover:text-white"
+          >Recruitment</a
+        >
+      </nav>
+
+      <!-- Right actions -->
+      <div class="flex items-center gap-3">
+        <a
+          href="https://discord.com/invite/dPafqMwWPK"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center gap-2 rounded-2xl bg-white text-black px-4 py-2 text-sm hover:bg-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+        >
+          Discord
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M14 5h5v5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <path
+              d="M10 14L19 5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <path
+              d="M19 14v5H5V5h5"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              opacity="0.7"
+            />
+          </svg>
+        </a>
+
+        <!-- Mobile menu button -->
+        <button
+          type="button"
+          class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-2xl bg-black/25 hover:bg-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+          aria-label="Open menu"
+          aria-controls="mobile-nav"
+          aria-expanded="false"
+          data-role="menu-button"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 7h14M5 12h14M5 17h14"
+              stroke="rgba(255,255,255,0.9)"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile nav panel -->
+  <div
+    id="mobile-nav"
+    class="md:hidden hidden px-4 sm:px-6 lg:px-10 mt-3"
+    data-role="mobile-panel"
+  >
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-white/5 backdrop-blur-md rounded-3xl p-4">
+        <nav class="grid grid-cols-1 gap-2 text-sm text-white/85" aria-label="Mobile">
+          <a data-nav="home" href="./index.html" class="rounded-2xl bg-black/20 px-4 py-3 hover:bg-black/30">Home</a>
+          <a data-nav="events" href="./events.html" class="rounded-2xl bg-black/20 px-4 py-3 hover:bg-black/30">Events</a>
+          <a data-nav="leaders" href="./leaders.html" class="rounded-2xl bg-black/20 px-4 py-3 hover:bg-black/30">Leaders</a>
+          <a data-nav="ranks" href="./ranks.html" class="rounded-2xl bg-black/20 px-4 py-3 hover:bg-black/30">Ranks</a>
+          <a data-nav="join" href="./join.html" class="rounded-2xl bg-black/20 px-4 py-3 hover:bg-black/30">Join</a>
+          <a data-nav="codex" href="./codex.html" class="rounded-2xl bg-black/20 px-4 py-3 hover:bg-black/30">Codex</a>
+          <a data-nav="recruitment" href="./recruitment.html" class="rounded-2xl bg-black/20 px-4 py-3 hover:bg-black/30">Recruitment</a>
+
+          <a
+            href="https://discord.com/invite/dPafqMwWPK"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-2 inline-flex items-center justify-center gap-2 rounded-2xl bg-white text-black px-4 py-3 text-sm hover:bg-white/90"
+          >
+            Discord
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 5h5v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M10 14L19 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M19 14v5H5V5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.7" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
