@@ -32,6 +32,7 @@
 </head>
 
 <body class="bg-black text-white selection:bg-white/20">
+  <div id="header"></div>
   <!-- HERO GATE (only Discord CTA appears here) -->
   <section class="relative min-h-[92vh] overflow-hidden">
     <!-- hero image -->
@@ -239,21 +240,9 @@
 
 <div id="footer"></div>
 
-<script>
-  fetch("./footer.html")
-    .then(r => r.text())
-    .then(html => {
-      document.getElementById("footer").innerHTML = html;
-
-      const year = new Date().getFullYear();
-      const el = document.getElementById("copyright-text");
-      if (el) el.textContent = `© ${year} Mōchirīī`;
-    });
-</script>
-
 <script src="./site.js" defer></script>
 
   <!-- Page renderer -->
-  <script src="./home.js"></script>
+  <script src="./home.js" defer></script>
 </body>
 </html>
