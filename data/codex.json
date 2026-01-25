@@ -1,0 +1,129 @@
+{
+  "hero": {
+    "image": "./assets/img/codex/hero.webp",
+    "title": "The Codex",
+    "description": "The living principles, customs, and rhythms that guide life within Mōchirīī.",
+    "pill": "A shared understanding, not a list of rules.",
+    "homeHref": "./index.html",
+    "joinHref": "./join.html"
+  },
+
+  "tenets": {
+    "title": "Tenets",
+    "description": "These principles shape how members act, speak, and grow together.",
+    "image": "./assets/img/codex/tenets.webp",
+    "captionTitle": "Guiding Principles",
+    "caption": "The Codex reflects how we choose to treat one another, both in and beyond the game.",
+    "note": "These tenets are meant to guide behavior naturally, not restrict expression.",
+    "items": [
+      {
+        "title": "Harmony",
+        "description": "We value balance in conversation, play, and community interaction."
+      },
+      {
+        "title": "Generosity",
+        "description": "Support is offered freely, without expectation of return."
+      },
+      {
+        "title": "Respect",
+        "description": "Every member is treated with dignity, regardless of rank or experience."
+      },
+      {
+        "title": "Presence",
+        "description": "Consistency and reliability matter more than constant activity."
+      },
+      {
+        "title": "Craft",
+        "description": "We improve together by sharing knowledge and refining our skills."
+      },
+      {
+        "title": "Joy",
+        "description": "Play, curiosity, and light-heartedness are central to the guild spirit."
+      }
+    ]
+  },
+
+  "etiquette": {
+    "title": "Etiquette",
+    "description": "How we interact, resolve conflict, and maintain a welcoming atmosphere.",
+    "image": "./assets/img/codex/etiquette.webp",
+    "note": "When in doubt, choose patience and clarity.",
+    "blocks": [
+      {
+        "title": "Chat & Tone",
+        "items": [
+          "Speak with courtesy and consideration.",
+          "Avoid hostile or dismissive language.",
+          "Assume good intent when misunderstandings arise."
+        ]
+      },
+      {
+        "title": "Help & Mentoring",
+        "items": [
+          "Offer help without pressure or judgment.",
+          "Ask questions freely and without embarrassment.",
+          "Share knowledge in a supportive manner."
+        ]
+      },
+      {
+        "title": "Conflict & Resolution",
+        "items": [
+          "Address issues calmly and privately when possible.",
+          "Seek mediation if resolution cannot be reached.",
+          "Respect final decisions made by leadership."
+        ]
+      }
+    ]
+  },
+
+  "rhythm": {
+    "title": "Rhythm",
+    "description": "The natural flow of activity within the guild.",
+    "image": "./assets/img/codex/rituals.webp",
+    "captionTitle": "A Gentle Cadence",
+    "caption": "Mōchirīī values steady engagement over constant intensity.",
+    "note": "Members are encouraged to participate at a pace that suits their lives.",
+    "items": [
+      {
+        "title": "Events",
+        "description": "Group activities and gatherings announced regularly."
+      },
+      {
+        "title": "Raffles",
+        "description": "Occasional rewards and giveaways as a thank-you to active members."
+      },
+      {
+        "title": "Updates",
+        "description": "Announcements and changes shared clearly and in advance."
+      },
+      {
+        "title": "Quiet Days",
+        "description": "Time for relaxed play, solo progress, or simple conversation."
+      }
+    ]
+  },
+
+  "recognition": {
+    "title": "Recognition",
+    "description": "Growth within the guild is acknowledged through consistent presence and positive contribution.",
+    "items": [
+      {
+        "title": "Consistency",
+        "description": "Regular participation and dependable presence over time."
+      },
+      {
+        "title": "Contribution",
+        "description": "Helping others, sharing knowledge, and supporting guild activities."
+      },
+      {
+        "title": "Character",
+        "description": "Maintaining a respectful, thoughtful, and cooperative attitude."
+      }
+    ],
+    "ranksHref": "./ranks.html"
+  },
+
+  "footer": {
+    "text": "The Codex exists to guide, not to bind. It reflects who we strive to be together."
+  }
+}
