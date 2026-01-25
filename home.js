@@ -136,7 +136,7 @@ function renderHero(data) {
     }
   }
 
-  if (heroDesc) heroDesc.textContent = safeText(hero.descriptor, "Quiet, cozy guild. Mochirii welcomes pretty people from all over the world to a yummy Cupcake home. No pressure, be sweet like frosting, support each other at all times. 30-day Cupcake nap ok if you let us know. Visit us @ Mochirii . com");
+  if (heroDesc) heroDesc.textContent = safeText(hero.descriptor, "Brief guild identity statement goes here.");
 
   if (badgesWrap) {
     badgesWrap.innerHTML = "";
@@ -293,8 +293,8 @@ function renderSpotlight(spotlight) {
   setImg(img, safeText(spotlight?.image, "./assets/img/featured/spotlight.webp"), "Spotlight cover");
 
   if (tag) tag.textContent = safeText(spotlight?.tag, "Spotlight tag goes here.");
-  if (title) title.textContent = safeText(spotlight?.title, "Guild member of the month");
-  if (summary) summary.textContent = safeText(spotlight?.summary, "Every month one guild member is chosen who has been conistently present & engaging with the community. They receive a special spotlight feature and a yummy cupcake reward!");
+  if (title) title.textContent = safeText(spotlight?.title, "Spotlight title goes here.");
+  if (summary) summary.textContent = safeText(spotlight?.summary, "Brief description of what the spotlight contains.");
 }
 
 function renderGallery(items) {
