@@ -317,11 +317,19 @@
     </section>
   </main>
 
-  <footer class="px-4 sm:px-6 lg:px-10 pb-10 sm:pb-14">
-    <div class="max-w-6xl mx-auto text-xs sm:text-sm text-white/70">
-      <div>Brief footer metadata goes here.</div>
-    </div>
-  </footer>
+<div id="footer"></div>
+
+<script>
+  fetch("./footer.html")
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+
+      const year = new Date().getFullYear();
+      const el = document.getElementById("copyright-text");
+      if (el) el.textContent = `© ${year} Mōchirīī`;
+    });
+</script>
 
   <!-- Optional: later you can add ./ranks.js to render this from ./data/ranks.json -->
   <!-- <script src="./ranks.js"></script> -->

@@ -237,12 +237,19 @@
     </div>
   </div>
 
-  <!-- Minimal footer (utility only) -->
-  <footer class="px-4 sm:px-6 lg:px-10 pb-10 sm:pb-14">
-    <div class="max-w-6xl mx-auto text-xs sm:text-sm text-white/70">
-      <div id="footerMeta">Brief site footer metadata goes here.</div>
-    </div>
-  </footer>
+<div id="footer"></div>
+
+<script>
+  fetch("./footer.html")
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+
+      const year = new Date().getFullYear();
+      const el = document.getElementById("copyright-text");
+      if (el) el.textContent = `© ${year} Mōchirīī`;
+    });
+</script>
 
   <!-- Page renderer -->
   <script src="./home.js"></script>
