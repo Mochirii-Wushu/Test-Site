@@ -1,0 +1,46 @@
+{
+  "page": {
+    "pill": "Guild calendar and gatherings",
+    "title": "Events",
+    "description": "Brief description of what belongs here: the guild’s event rhythm, how members join in, and how updates are shared."
+  },
+  "featured": {
+    "tag": "Featured",
+    "date": "YYYY-MM-DD",
+    "time": "Time / timezone",
+    "title": "Featured event title goes here",
+    "summary": "Brief description of what belongs here: what the event is, what members do, and how to participate.",
+    "image": "./assets/img/events/featured.webp",
+    "ctaLabel": "View upcoming",
+    "ctaHref": "#upcoming"
+  },
+  "upcoming": [
+    {
+      "id": "event-01",
+      "date": "YYYY-MM-DD",
+      "time": "Time / timezone",
+      "title": "Event title goes here",
+      "summary": "Brief description of what belongs here: one-line purpose and how to join.",
+      "image": "./assets/img/events/event-01.webp",
+      "href": "https://discord.com/invite/dPafqMwWPK"
+    },
+    {
+      "id": "event-02",
+      "date": "YYYY-MM-DD",
+      "time": "Time / timezone",
+      "title": "Event title goes here",
+      "summary": "Brief description of what belongs here: one-line purpose and how to join.",
+      "image": "./assets/img/events/event-02.webp",
+      "href": "https://discord.com/invite/dPafqMwWPK"
+    },
+    {
+      "id": "event-03",
+      "date": "YYYY-MM-DD",
+      "time": "Time / timezone",
+      "title": "Event title goes here",
+      "summary": "Brief description of what belongs here: one-line purpose and how to join.",
+      "image": "./assets/img/events/event-03.webp",
+      "href": "https://discord.com/invite/dPafqMwWPK"
+    }
+  ]
+}

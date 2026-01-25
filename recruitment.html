@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mōchirīī • Recruitment</title>
+    <meta
+      name="description"
+      content="Recruitment notes for Mōchirīī — guidance for growing a steady, welcoming guild in Where Winds Meet."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      :root {
+        --font-display: "Cinzel", serif;
+        --font-body: "Inter", system-ui, sans-serif;
+      }
+      body {
+        font-family: var(--font-body);
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-black text-white">
+    <!-- Background -->
+    <div class="fixed inset-0 -z-20">
+      <img
+        src="./assets/img/recruitment/hero.webp"
+        alt=""
+        class="h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+
+    <!-- Atmosphere -->
+    <div class="fixed inset-0 -z-10 pointer-events-none">
+      <img
+        src="./assets/img/recruitment/atmosphere.webp"
+        alt=""
+        class="h-full w-full object-cover opacity-50"
+      />
+    </div>
+
+    <!-- Header -->
+    <header class="px-4 sm:px-6 lg:px-10 pt-6">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex items-center justify-between bg-white/5 backdrop-blur-md rounded-3xl px-5 py-3"
+        >
+          <a href="./index.html" class="flex items-center gap-3">
+            <span
+              class="w-10 h-10 rounded-2xl bg-black/30 flex items-center justify-center"
+            >
+              🌸
+            </span>
+            <div>
+              <div class="font-[var(--font-display)] text-lg">
+                Mōchirīī
+              </div>
+              <div class="text-xs text-white/70">
+                Recruitment
+              </div>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex gap-5 text-sm text-white/80">
+            <a href="./index.html">Home</a>
+            <a href="./events.html">Events</a>
+            <a href="./leaders.html">Leaders</a>
+            <a href="./ranks.html">Ranks</a>
+            <a href="./join.html">Join</a>
+            <a href="./codex.html">Codex</a>
+          </nav>
+
+          <a
+            href="https://discord.com/invite/dPafqMwWPK"
+            target="_blank"
+            class="bg-white text-black px-4 py-2 rounded-2xl text-sm"
+          >
+            Discord
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="px-4 sm:px-6 lg:px-10 pt-12 pb-20">
+      <div class="max-w-5xl mx-auto">
+        <!-- Title -->
+        <section class="mb-10">
+          <h1
+            class="font-[var(--font-display)] text-4xl sm:text-5xl leading-tight"
+          >
+            Mōchirīī Recruitment Notes
+          </h1>
+          <p class="mt-3 text-white/80">
+            From Twills, to my fellow petals, veterans, and future leaders
+          </p>
+        </section>
+
+        <!-- Content -->
+        <section class="space-y-8 text-white/85 leading-relaxed">
+          <p>
+            Let’s take a moment to talk about recruiting, because it matters deeply to the long-term strength of Mōchirīī. This is for everyone who cares about the guild’s future, whether you arrived recently or have been here long enough to feel at home. Recruiting is a skill that grows through practice, observation, and intention. Every conversation teaches you something. Every interaction sharpens your sense of what brings people in and what helps them stay.
+          </p>
+
+          <p>
+            As you listen, take what resonates and try it in your own way. The most important part is participation. Even one new member matters. If each of us brought in a single person, the guild would grow faster than we expect. That one person might become a long-term veteran, a future leader, or someone who quietly supports others and keeps the guild steady during slower seasons.
+          </p>
+
+          <p>
+            Growth and quality rise together. Numbers give a guild energy. Energy creates presence. Presence builds confidence. A living guild draws people in because it feels active and welcoming. Some members stay casually, some grow into core contributors, and some step forward as leaders over time. Patterns emerge only through motion. Momentum gives us that motion.
+          </p>
+
+          <p>
+            A healthy guild thrives around a strong, steady population. That gives room for events, mentorship, leadership development, and different playstyles to coexist naturally. When people log in and see life around them, they feel connected. That sense of connection keeps communities strong.
+          </p>
+
+          <p>
+            Recruiting happens in many ways. Forum posts still matter, especially when they stay current and reflect real activity. Playing together matters even more. Shared experiences create trust. When runs feel smooth and friendly, people remember that. Conversations begin naturally. Community grows from there. Sometimes recruiting is as simple as paying attention. When someone mentions looking for a guild, reaching out with curiosity and care opens the door. Announcements also have their place during quieter periods. Clear, respectful messages create opportunities for conversation and connection.
+          </p>
+
+          <p>
+            When recruiting feels slow, the answer usually lies in retention. People stay when they feel seen, guided, and included. Structure supports that feeling. Organization gives people a place to belong and a path to follow.
+          </p>
+
+          <p>
+            To everyone helping with recruitment, your effort matters. Every message, every conversation, every invitation strengthens the guild. To those in leadership, remember that today’s dedicated members shape tomorrow’s direction. Support them. Help them find their footing. Give them space to grow into themselves.
+          </p>
+
+          <p>
+            Mōchirīī is meant to feel warm, alive, and welcoming. We build that together, one person at a time. Let’s continue growing something worth staying for.
+          </p>
+        </section>
+
+        <!-- Footer mount -->
+        <div id="footer" class="mt-16"></div>
+      </div>
+    </main>
+
+    <!-- Footer include -->
+    <script>
+      fetch("./footer.html")
+        .then((r) => r.text())
+        .then((html) => {
+          const mount = document.getElementById("footer");
+          if (mount) mount.innerHTML = html;
+
+          const year = new Date().getFullYear();
+          const el = document.getElementById("copyright-text");
+          if (el) el.textContent = `© ${year} Mōchirīī`;
+        });
+    </script>
+  </body>
+</html>

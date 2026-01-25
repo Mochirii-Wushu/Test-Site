@@ -1,0 +1,61 @@
+{
+  "page": {
+    "title": "Mōchirīī Recruitment",
+    "subtitle": "Notes on growing a steady, welcoming guild"
+  },
+
+  "overview": {
+    "intro": "Let’s take a moment to talk about recruiting, because it matters deeply to the long-term strength of Mōchirīī.",
+    "focus": "Recruitment is a skill shaped by practice, observation, and intention. Every interaction teaches something about what brings people in and what helps them stay.",
+    "philosophy": "Growth works best when participation comes naturally and community remains at the center."
+  },
+
+  "principles": [
+    {
+      "title": "Participation Matters",
+      "description": "Even one new member makes a difference. A single invitation can become a long-term presence, a future leader, or someone who quietly supports others when it matters most."
+    },
+    {
+      "title": "Momentum Builds Community",
+      "description": "Activity creates energy. Energy creates presence. Presence builds confidence. A living guild draws people in through shared experience."
+    },
+    {
+      "title": "Balance Creates Stability",
+      "description": "A steady population allows events, mentorship, leadership, and different playstyles to exist together in a healthy way."
+    }
+  ],
+
+  "recruitmentMethods": [
+    {
+      "title": "Forum Presence",
+      "description": "Clear, current posts signal stability and care. A visible presence builds trust and draws interest naturally."
+    },
+    {
+      "title": "Playing Together",
+      "description": "Shared experiences build familiarity. When runs feel relaxed and welcoming, conversations form naturally."
+    },
+    {
+      "title": "Being Observant",
+      "description": "Sometimes recruiting is as simple as noticing when someone is looking for a place to belong and reaching out with care."
+    },
+    {
+      "title": "Announcements",
+      "description": "Used sparingly, clear messages help maintain visibility during quieter periods and open doors to conversation."
+    }
+  ],
+
+  "retention": {
+    "summary": "When recruitment feels slow, the answer often lies in retention.",
+    "details": "People stay when they feel seen, guided, and included. Structure creates stability. Organization provides direction. These elements keep communities grounded."
+  },
+
+  "leadership": {
+    "members": "Every message, conversation, and invitation contributes to the guild’s long-term health.",
+    "leaders": "Strong leadership creates space for growth, mentorship, and continuity. Today’s members become tomorrow’s anchors."
+  },
+
+  "closing": {
+    "message": "Mōchirīī is meant to feel warm, alive, and welcoming. We build it together, one person at a time.",
+    "callToAction": "Let’s continue growing something worth staying for."
+  }
+}

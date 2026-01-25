@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mōchirīī • Events</title>
+    <meta
+      name="description"
+      content="Guild events and gatherings for Mōchirīī in Where Winds Meet."
+    />
+
+    <!-- Google Fonts (calligraphic + readable) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN (GitHub Pages friendly) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Site font tokens -->
+    <style>
+      :root {
+        --font-display: "Cinzel", ui-serif, Georgia, serif;
+        --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+          Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+      html,
+      body {
+        font-family: var(--font-body);
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-black text-white">
+    <!-- Background image layer -->
+    <div class="fixed inset-0 -z-20">
+      <img
+        src="./assets/img/events/hero.webp"
+        alt=""
+        class="h-full w-full object-cover"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+
+    <!-- Optional atmosphere overlay -->
+    <div class="fixed inset-0 -z-10 pointer-events-none">
+      <img
+        src="./assets/img/events/atmosphere.webp"
+        alt=""
+        class="h-full w-full object-cover opacity-60"
+        loading="lazy"
+      />
+    </div>
+
+    <!-- Header -->
+    <header class="px-4 sm:px-6 lg:px-10 pt-6">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="flex items-center justify-between gap-4 bg-white/5 backdrop-blur-md rounded-3xl px-4 sm:px-6 py-3"
+        >
+          <a href="./index.html" class="flex items-center gap-3 group">
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-2xl bg-black/25"
+              aria-hidden="true"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 3c2.7 3.1 4 6 4 8.7C16 15.2 13.8 18 12 21c-1.8-3-4-5.8-4-9.3C8 9 9.3 6.1 12 3Z"
+                  stroke="rgba(255,255,255,0.88)"
+                  stroke-width="1.4"
+                />
+                <path
+                  d="M5 12.2c2.7-1.2 5.1-1.6 7-1.6s4.3.4 7 1.6"
+                  stroke="rgba(255,255,255,0.65)"
+                  stroke-width="1.2"
+                />
+              </svg>
+            </span>
+
+            <div>
+              <div
+                class="font-[var(--font-display)] text-lg sm:text-xl tracking-[0.02em] leading-none"
+              >
+                Mōchirīī
+              </div>
+              <div class="text-xs sm:text-sm text-white/70 mt-1">
+                Events • Where Winds Meet
+              </div>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-5 text-sm text-white/80">
+            <a href="./index.html" class="hover:text-white">Home</a>
+            <a href="./leaders.html" class="hover:text-white">Leaders</a>
+            <a href="./ranks.html" class="hover:text-white">Ranks</a>
+            <a href="./join.html" class="hover:text-white">Join</a>
+            <a href="./codex.html" class="hover:text-white">Codex</a>
+          </nav>
+
+          <a
+            href="https://discord.com/invite/dPafqMwWPK"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 rounded-2xl bg-white text-black px-4 py-2 text-sm hover:bg-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+          >
+            Discord
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M14 5h5v5"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+              <path
+                d="M10 14L19 5"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+              <path
+                d="M19 14v5H5V5h5"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                opacity="0.7"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="px-4 sm:px-6 lg:px-10 pt-10 pb-14">
+      <div class="max-w-7xl mx-auto">
+        <!-- Hero copy -->
+        <section class="max-w-3xl">
+          <div
+            class="inline-flex items-center gap-2 rounded-2xl bg-black/25 backdrop-blur-md px-4 py-2 text-xs sm:text-sm text-white/80"
+            data-role="events-pill"
+          >
+            Guild calendar and gatherings
+          </div>
+
+          <h1
+            class="mt-5 font-[var(--font-display)] tracking-[0.02em] text-4xl sm:text-5xl lg:text-6xl leading-[1.02]"
+            data-role="events-title"
+          >
+            Events
+          </h1>
+
+          <p
+            class="mt-4 text-sm sm:text-base lg:text-lg leading-snug text-white/80"
+            data-role="events-desc"
+          >
+            Brief description of what belongs here: the guild’s event rhythm, how
+            members join in, and how updates are shared.
+          </p>
+        </section>
+
+        <!-- Featured event -->
+        <section class="mt-10 sm:mt-12 lg:mt-14">
+          <div class="flex items-end justify-between gap-4">
+            <div>
+              <h2
+                class="font-[var(--font-display)] tracking-[0.02em] text-2xl sm:text-3xl leading-tight"
+              >
+                Featured
+              </h2>
+              <p class="mt-2 text-sm sm:text-base text-white/75 max-w-xl">
+                Brief description of what belongs here: the current highlighted
+                guild activity and why it matters.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-7 items-stretch"
+          >
+            <!-- Featured image -->
+            <div class="relative overflow-hidden rounded-3xl">
+              <div class="relative aspect-[16/10]">
+                <img
+                  src="./assets/img/events/featured.webp"
+                  alt="Featured event artwork"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                  data-role="featured-image"
+                />
+                <div class="absolute inset-0 bg-black/35"></div>
+              </div>
+            </div>
+
+            <!-- Featured content -->
+            <div
+              class="bg-white/5 backdrop-blur-md rounded-3xl p-5 sm:p-7 lg:p-8"
+            >
+              <div class="flex flex-wrap items-center gap-2">
+                <span
+                  class="inline-flex items-center rounded-2xl bg-black/25 px-3 py-1 text-xs sm:text-sm text-white/80"
+                  data-role="featured-tag"
+                >
+                  Featured
+                </span>
+                <span
+                  class="text-xs sm:text-sm text-white/70"
+                  data-role="featured-date"
+                >
+                  YYYY-MM-DD
+                </span>
+                <span class="text-xs sm:text-sm text-white/60">•</span>
+                <span
+                  class="text-xs sm:text-sm text-white/70"
+                  data-role="featured-time"
+                >
+                  Time / timezone
+                </span>
+              </div>
+
+              <h3
+                class="mt-4 font-[var(--font-display)] tracking-[0.02em] text-2xl sm:text-3xl leading-tight"
+                data-role="featured-title"
+              >
+                Featured event title goes here
+              </h3>
+
+              <p
+                class="mt-3 text-sm sm:text-base leading-snug text-white/80"
+                data-role="featured-summary"
+              >
+                Brief description of what belongs here: what the event is, what
+                members do, and how to participate.
+              </p>
+
+              <div class="mt-6 flex flex-wrap items-center gap-3">
+                <a
+                  href="#upcoming"
+                  class="inline-flex items-center justify-center rounded-2xl bg-white text-black px-4 py-2 text-sm hover:bg-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  data-role="featured-cta"
+                >
+                  View upcoming
+                </a>
+
+                <a
+                  href="https://discord.com/invite/dPafqMwWPK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-sm text-white/80 underline underline-offset-4 decoration-white/25 hover:decoration-white/60"
+                >
+                  RSVP / details in Discord
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Upcoming events -->
+        <section id="upcoming" class="mt-12 sm:mt-14 lg:mt-20">
+          <div class="flex items-end justify-between gap-4">
+            <div>
+              <h2
+                class="font-[var(--font-display)] tracking-[0.02em] text-2xl sm:text-3xl leading-tight"
+              >
+                Upcoming
+              </h2>
+              <p class="mt-2 text-sm sm:text-base text-white/75 max-w-xl">
+                Brief description of what belongs here: a clean list of
+                upcoming events that members can join with minimal effort.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+            data-role="events-upcoming"
+          >
+            <!-- Card 1 -->
+            <article class="bg-white/5 backdrop-blur-md rounded-3xl overflow-hidden">
+              <div class="relative aspect-[16/10]">
+                <img
+                  src="./assets/img/events/event-01.webp"
+                  alt="Event artwork"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-black/35"></div>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center justify-between gap-3 text-xs sm:text-sm text-white/70">
+                  <span>YYYY-MM-DD</span>
+                  <span>Time / timezone</span>
+                </div>
+                <h3 class="mt-3 font-[var(--font-display)] text-xl leading-tight">
+                  Event title goes here
+                </h3>
+                <p class="mt-2 text-sm leading-snug text-white/80">
+                  Brief description of what belongs here: one-line purpose and how to join.
+                </p>
+                <div class="mt-4">
+                  <a
+                    href="https://discord.com/invite/dPafqMwWPK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-sm text-white/80 underline underline-offset-4 decoration-white/25 hover:decoration-white/60"
+                  >
+                    Open details
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="bg-white/5 backdrop-blur-md rounded-3xl overflow-hidden">
+              <div class="relative aspect-[16/10]">
+                <img
+                  src="./assets/img/events/event-02.webp"
+                  alt="Event artwork"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-black/35"></div>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center justify-between gap-3 text-xs sm:text-sm text-white/70">
+                  <span>YYYY-MM-DD</span>
+                  <span>Time / timezone</span>
+                </div>
+                <h3 class="mt-3 font-[var(--font-display)] text-xl leading-tight">
+                  Event title goes here
+                </h3>
+                <p class="mt-2 text-sm leading-snug text-white/80">
+                  Brief description of what belongs here: one-line purpose and how to join.
+                </p>
+                <div class="mt-4">
+                  <a
+                    href="https://discord.com/invite/dPafqMwWPK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-sm text-white/80 underline underline-offset-4 decoration-white/25 hover:decoration-white/60"
+                  >
+                    Open details
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="bg-white/5 backdrop-blur-md rounded-3xl overflow-hidden">
+              <div class="relative aspect-[16/10]">
+                <img
+                  src="./assets/img/events/event-03.webp"
+                  alt="Event artwork"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-black/35"></div>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center justify-between gap-3 text-xs sm:text-sm text-white/70">
+                  <span>YYYY-MM-DD</span>
+                  <span>Time / timezone</span>
+                </div>
+                <h3 class="mt-3 font-[var(--font-display)] text-xl leading-tight">
+                  Event title goes here
+                </h3>
+                <p class="mt-2 text-sm leading-snug text-white/80">
+                  Brief description of what belongs here: one-line purpose and how to join.
+                </p>
+                <div class="mt-4">
+                  <a
+                    href="https://discord.com/invite/dPafqMwWPK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-sm text-white/80 underline underline-offset-4 decoration-white/25 hover:decoration-white/60"
+                  >
+                    Open details
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Recurring rhythm -->
+        <section class="mt-12 sm:mt-14 lg:mt-20">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-7 items-stretch">
+            <div class="bg-white/5 backdrop-blur-md rounded-3xl p-5 sm:p-7">
+              <h2
+                class="font-[var(--font-display)] tracking-[0.02em] text-2xl sm:text-3xl leading-tight"
+              >
+                Recurring rhythm
+              </h2>
+              <p class="mt-2 text-sm sm:text-base text-white/75 max-w-xl">
+                Brief description of what belongs here: monthly cadence, recurring guild nights, and how members keep track.
+              </p>
+
+              <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3" data-role="recurring-list">
+                <div class="bg-black/25 rounded-2xl p-4">
+                  <div class="text-sm text-white/70">Frequency</div>
+                  <div class="mt-1 font-[var(--font-display)] text-lg">
+                    Monthly Raffle
+                  </div>
+                  <div class="mt-2 text-sm text-white/80 leading-snug">
+                    Brief description of what belongs here: what members can expect and where details are posted.
+                  </div>
+                </div>
+
+                <div class="bg-black/25 rounded-2xl p-4">
+                  <div class="text-sm text-white/70">Frequency</div>
+                  <div class="mt-1 font-[var(--font-display)] text-lg">
+                    Guild Gathering
+                  </div>
+                  <div class="mt-2 text-sm text-white/80 leading-snug">
+                    Brief description of what belongs here: a social event, activity focus, and participation style.
+                  </div>
+                </div>
+
+                <div class="bg-black/25 rounded-2xl p-4">
+                  <div class="text-sm text-white/70">Frequency</div>
+                  <div class="mt-1 font-[var(--font-display)] text-lg">
+                    Community Night
+                  </div>
+                  <div class="mt-2 text-sm text-white/80 leading-snug">
+                    Brief description of what belongs here: relaxed hangout format and voice/text options.
+                  </div>
+                </div>
+
+                <div class="bg-black/25 rounded-2xl p-4">
+                  <div class="text-sm text-white/70">Frequency</div>
+                  <div class="mt-1 font-[var(--font-display)] text-lg">
+                    Seasonal Festival
+                  </div>
+                  <div class="mt-2 text-sm text-white/80 leading-snug">
+                    Brief description of what belongs here: seasonal theme, photos, and guild moments.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-3xl">
+              <div class="relative aspect-[16/10]">
+                <img
+                  src="./assets/img/events/rhythm.webp"
+                  alt="Recurring events artwork"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-black/35"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Participation panel -->
+        <section class="mt-12 sm:mt-14 lg:mt-20">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-7 items-stretch">
+            <div class="relative overflow-hidden rounded-3xl">
+              <div class="relative aspect-[16/10]">
+                <img
+                  src="./assets/img/events/participation.webp"
+                  alt="Participation artwork"
+                  class="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-black/35"></div>
+              </div>
+            </div>
+
+            <div class="bg-white/5 backdrop-blur-md rounded-3xl p-5 sm:p-7">
+              <h2
+                class="font-[var(--font-display)] tracking-[0.02em] text-2xl sm:text-3xl leading-tight"
+              >
+                Participation
+              </h2>
+              <p class="mt-2 text-sm sm:text-base text-white/75 max-w-xl">
+                Brief description of what belongs here: who can join events, how signups work, and the expected tone.
+              </p>
+
+              <div class="mt-5 grid grid-cols-1 gap-3">
+                <div class="bg-black/25 rounded-2xl p-4">
+                  <div class="font-[var(--font-display)] text-lg">Who</div>
+                  <div class="mt-2 text-sm text-white/80 leading-snug">
+                    Brief description of what belongs here: member eligibility and guest policy.
+                  </div>
+                </div>
+
+                <div class="bg-black/25 rounded-2xl p-4">
+                  <div class="font-[var(--font-display)] text-lg">How</div>
+                  <div class="mt-2 text-sm text-white/80 leading-snug">
+                    Brief description of what belongs here: RSVP process and where event info lives.
+                  </div>
+                </div>
+
+                <div class="bg-black/25 rounded-2xl p-4">
+                  <div class="font-[var(--font-display)] text-lg">Tone</div>
+                  <div class="mt-2 text-sm text-white/80 leading-snug">
+                    Brief description of what belongs here: relaxed, inclusive expectations and respectful play.
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 flex flex-wrap items-center gap-3">
+                <a
+                  href="https://discord.com/invite/dPafqMwWPK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center rounded-2xl bg-white text-black px-4 py-2 text-sm hover:bg-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                >
+                  Check the event channel
+                </a>
+
+                <a
+                  href="./join.html"
+                  class="text-sm text-white/80 underline underline-offset-4 decoration-white/25 hover:decoration-white/60"
+                >
+                  How to join the guild
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer mount -->
+        <div id="footer" class="mt-12 sm:mt-14 lg:mt-20"></div>
+      </div>
+    </main>
+
+    <!-- Footer include -->
+    <script>
+      fetch("./footer.html")
+        .then((r) => r.text())
+        .then((html) => {
+          const mount = document.getElementById("footer");
+          if (mount) mount.innerHTML = html;
+
+          const year = new Date().getFullYear();
+          const el = document.getElementById("copyright-text");
+          if (el) el.textContent = `© ${year} Mōchirīī`;
+        })
+        .catch(() => {});
+    </script>
+
+    <!-- Events page logic (optional data wiring later) -->
+    <script src="./events.js" defer></script>
+  </body>
+</html>
