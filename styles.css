@@ -4,9 +4,12 @@
    Keeps all content & assets. Rebuilds the atmosphere entirely.
    ========================================================= */
 
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&family=Noto+Serif+SC:wght@400;500;600&display=swap");
 
-:root{
+:root {
+  --font-display: "Zhi Mang Xing", ui-serif, serif;
+  --font-body: "Noto Serif SC", ui-serif, serif;
+
   --ink0:#070812;
   --ink1:#0b0b1a;
   --ink2:#10102a;
@@ -14,6 +17,12 @@
   --ember:#f97316;
   --moon:#60a5fa;
   --grain:.055;
+}
+
+body{
+  font-family: var(--font-body);
+  background-color: black;
+  color: white;
 }
 
 /* Keep existing theme attribute names, shift their meaning */
