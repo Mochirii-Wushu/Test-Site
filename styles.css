@@ -42,6 +42,13 @@ html[data-theme="moon"]{
 html, body{ height:100%; }
 html{ background: var(--ink0); }
 
+body[data-page="recruitment"] .bg-photo,
+body[data-page="recruitment"] .bg-ink,
+body[data-page="recruitment"] .bg-ink-2,
+body[data-page="recruitment"] .bg-grain{
+  display:none !important;
+}
+
 /* Background image stays the same asset, ambience changes via filters + overlays */
 .bg-photo{
   position:fixed; inset:0; z-index:0; pointer-events:none;
