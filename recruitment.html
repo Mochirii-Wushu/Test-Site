@@ -17,23 +17,26 @@
   </head>
 
   <body class="relative m-0 min-h-screen bg-black text-white" data-page="recruitment">
-    <!-- Background -->
-    <div class="fixed inset -0 -z-0 relative">
-      <img
-        src="./assets/img/recruitment/hero.webp"
-        alt=""
-        class="h-full w-full object-cover"
-      />
-      <div class="absolute inset-0 bg-black/60"></div>
-    </div>
 
-    <!-- Atmosphere -->
-  <div class="fixed inset-0 z-[1] pointer-events-none">
-    <img src="./assets/img/recruitment/atmosphere.webp"
-        alt=""
-        class="h-full w-full object-cover opacity-50"
-      />
-  </div>
+    <!-- Background stack (hero + atmosphere merged) -->
+<div class="fixed inset-0 z-0 pointer-events-none">
+  <!-- base hero -->
+  <img
+    src="./assets/img/recruitment/hero.webp"
+    alt=""
+    class="absolute inset-0 h-full w-full object-cover"
+  />
+
+  <!-- atmosphere overlay -->
+  <img
+    src="./assets/img/recruitment/atmosphere.webp"
+    alt=""
+    class="absolute inset-0 h-full w-full object-cover opacity-50 mix-blend-screen"
+  />
+
+  <!-- unified scrim to bind them together -->
+  <div class="absolute inset-0 bg-black/60"></div>
+</div>
 
     <!-- Page content (must sit above background layers) -->
     <div class="relative z-10">
