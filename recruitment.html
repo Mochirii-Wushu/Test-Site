@@ -34,109 +34,15 @@
     class="absolute inset-0 h-full w-full object-cover opacity-50 mix-blend-screen"
   />
 
-  <!-- unified scrim to bind them together -->
+  <!-- Scrim -->
   <div class="absolute inset-0 bg-black/60"></div>
 </div>
 
+              <!-- Global header mount -->
+          <div id="header" class="relative z-10"></div>
+
     <!-- Page content (must sit above background layers) -->
     <div class="relative z-10">
-
-<!-- Global Header — Mōchirīī -->
-<header id="site-header" class="site-header" data-state="top">
-  <div class="header-wrap">
-
-    <!-- Brand -->
-    <a class="brand" href="./index.html" aria-label="Mōchirīī Home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 128 128" class="lotus-svg" xmlns="http://www.w3.org/2000/svg">
-          <path d="M64 16c8 18 8 30 0 48-8-18-8-30 0-48Z" />
-          <path d="M32 32c16 10 24 20 32 40-18-6-28-16-32-40Z" />
-          <path d="M96 32c-4 24-14 34-32 40 8-20 16-30 32-40Z" />
-          <path d="M24 64c20 6 34 14 40 32-24-4-34-14-40-32Z" />
-          <path d="M104 64c-6 18-16 28-40 32 6-18 20-26 40-32Z" />
-        </svg>
-      </span>
-      <span class="brand-text">
-        <span class="brand-name">Mōchirīī</span>
-        <span class="brand-sub">Where Winds Meet Guild</span>
-      </span>
-    </a>
-
-    <!-- Desktop Nav -->
-    <nav class="nav" aria-label="Primary">
-      <a class="nav-link" href="./index.html">Home</a>
-      <a class="nav-link" href="./announcements.html">Announcements</a>
-      <a class="nav-link" href="./raffles.html">Raffles</a>
-      <a class="nav-link" href="./events.html">Events</a>
-      <a class="nav-link" href="./ranks.html">Ranks</a>
-      <a class="nav-link" href="./leaders.html">Leaders</a>
-      <a class="nav-link" href="./codex.html">Codex</a>
-      <a class="nav-link" href="./recruitment.html">Recruitment</a>
-    </nav>
-
-    <!-- Utilities -->
-    <div class="utils">
-      <button class="icon-btn" id="cmdk-btn" aria-label="Quick links">
-        <svg viewBox="0 0 24 24" class="icon">
-          <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Zm6.11-1.39 4.14 4.14"
-                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-        </svg>
-        <span class="kbd-hint">/</span>
-      </button>
-
-      <a class="cta" href="./join.html">
-        Join
-        <span class="cta-glint"></span>
-      </a>
-
-      <button class="burger" id="menu-btn" aria-label="Open menu">
-        <span class="burger-lines"></span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-shell" id="mobile-menu" hidden>
-    <div class="mobile-scrim" data-close></div>
-
-    <div class="mobile-sheet">
-      <div class="mobile-top">
-        <a class="brand" href="./index.html">
-          <span class="brand-mark">
-            <svg viewBox="0 0 128 128" class="lotus-svg">
-              <path d="M64 16c8 18 8 30 0 48-8-18-8-30 0-48Z" />
-              <path d="M32 32c16 10 24 20 32 40-18-6-28-16-32-40Z" />
-              <path d="M96 32c-4 24-14 34-32 40 8-20 16-30 32-40Z" />
-              <path d="M24 64c20 6 34 14 40 32-24-4-34-14-40-32Z" />
-              <path d="M104 64c-6 18-16 28-40 32 6-18 20-26 40-32Z" />
-            </svg>
-          </span>
-          <span class="brand-text">
-            <span class="brand-name">Mōchirīī</span>
-            <span class="brand-sub">Where Winds Meet Guild</span>
-          </span>
-        </a>
-
-        <button class="icon-btn" data-close>✕</button>
-      </div>
-
-      <nav class="mobile-nav">
-        <a class="mobile-link" href="./index.html">Home</a>
-        <a class="mobile-link" href="./announcements.html">Announcements</a>
-        <a class="mobile-link" href="./raffles.html">Raffles</a>
-        <a class="mobile-link" href="./events.html">Events</a>
-        <a class="mobile-link" href="./ranks.html">Ranks</a>
-        <a class="mobile-link" href="./leaders.html">Leaders</a>
-        <a class="mobile-link" href="./codex.html">Codex</a>
-        <a class="mobile-link" href="./recruitment.html">Recruitment</a>
-      </nav>
-
-      <div class="mobile-footer">
-        <a class="cta cta--full" href="./join.html">Join Mōchirīī</a>
-      </div>
-    </div>
-  </div>
-</header>
 
       <!-- Audio note -->
       <section class="mt-12 sm:mt-14 lg:mt-20 px-4 sm:px-6 lg:px-10">
@@ -261,24 +167,13 @@
             </div>
           </section>
 
-          <!-- Footer mount -->
+        <!-- Global footer mount -->
           <div id="footer" class="mt-16"></div>
         </div>
       </main>
     </div>
 
-    <!-- Footer include -->
-    <script>
-      fetch("./footer.html")
-        .then((r) => r.text())
-        .then((html) => {
-          const mount = document.getElementById("footer");
-          if (mount) mount.innerHTML = html;
+<script defer src="./site.js"></script>
 
-          const year = new Date().getFullYear();
-          const el = document.getElementById("copyright-text");
-          if (el) el.textContent = `© ${year} Mōchirīī`;
-        });
-    </script>
   </body>
 </html>
