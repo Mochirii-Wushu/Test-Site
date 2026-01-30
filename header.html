@@ -3,7 +3,15 @@
   <div class="header-wrap">
     <!-- Brand -->
     <a class="brand" href="./index.html" aria-label="Mōchirīī Home">
-      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 128 128" class="lotus-svg" xmlns="http://www.w3.org/2000/svg">
+        <path d="M64 16c8 18 8 30 0 48-8-18-8-30 0-48Z" />
+        <path d="M32 32c16 10 24 20 32 40-18-6-28-16-32-40Z" />
+        <path d="M96 32c-4 24-14 34-32 40 8-20 16-30 32-40Z" />
+        <path d="M24 64c20 6 34 14 40 32-24-4-34-14-40-32Z" />
+        <path d="M104 64c-6 18-16 28-40 32 6-18 20-26 40-32Z" />
+      </svg>
+    </span>
       <span class="brand-text">
         <span class="brand-name">Mōchirīī</span>
         <span class="brand-sub">Where Winds Meet Guild</span>
@@ -55,7 +63,15 @@
     <div class="mobile-sheet" role="document">
       <div class="mobile-top">
         <a class="brand brand--mobile" href="./index.html" aria-label="Mōchirīī Home">
-          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 128 128" class="lotus-svg" xmlns="http://www.w3.org/2000/svg">
+            <path d="M64 16c8 18 8 30 0 48-8-18-8-30 0-48Z" />
+            <path d="M32 32c16 10 24 20 32 40-18-6-28-16-32-40Z" />
+            <path d="M96 32c-4 24-14 34-32 40 8-20 16-30 32-40Z" />
+            <path d="M24 64c20 6 34 14 40 32-24-4-34-14-40-32Z" />
+            <path d="M104 64c-6 18-16 28-40 32 6-18 20-26 40-32Z" />
+          </svg>
+        </span>
           <span class="brand-text">
             <span class="brand-name">Mōchirīī</span>
             <span class="brand-sub">Where Winds Meet Guild</span>
@@ -83,6 +99,7 @@
         <a class="mobile-link" href="./leaders.html">Leaders</a>
         <a class="mobile-link" href="./codex.html">Codex</a>
         <a class="mobile-link" href="./recruitment.html">Recruitment</a>
+        <a class="mobile-link" href="./gallery.html">Gallery</a>
       </nav>
 
       <div class="mobile-footer">
@@ -116,6 +133,7 @@
         <button class="cmdk-item" type="button" data-href="./codex.html"><span>Codex</span><span class="meta">Lore</span></button>
         <button class="cmdk-item" type="button" data-href="./join.html"><span>Join</span><span class="meta">Apply</span></button>
         <button class="cmdk-item" type="button" data-href="./recruitment.html"><span>Recruitment</span><span class="meta">Guide</span></button>
+        <button class="cmdk-item" type="button" data-href="./gallery.html"><span>Gallery</span><span class="meta">Showcase</span></button>
       </div>
     </div>
   </div>
@@ -187,17 +205,45 @@
     min-width: 220px;
   }
 
-  .brand-mark{
-    width: 34px;
-    height: 34px;
-    border-radius: 12px;
-    background:
-      radial-gradient(120% 120% at 20% 20%, rgba(200,162,75,0.30), transparent 55%),
-      radial-gradient(120% 120% at 80% 80%, rgba(31,122,99,0.32), transparent 55%),
-      linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
-    border: 1px solid rgba(255,255,255,0.10);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.30);
-  }
+.brand-mark{
+  width: 36px;
+  height: 36px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(200,162,75,0.18),
+    rgba(31,122,99,0.35)
+  );
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.06),
+    0 12px 28px rgba(0,0,0,0.45);
+}
+
+.lotus-svg{
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: rgba(255,255,255,0.85);
+  stroke-width: 2;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.45));
+}
+
+.brand-mark:hover .lotus-svg{
+  transform: scale(1.04);
+  transition: transform 220ms ease;
+}
+
+@keyframes lotusGlow {
+  0%,100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+
+.lotus-svg {
+  animation: lotusGlow 6s ease-in-out infinite;
+}
 
   .brand-text{ display:flex; flex-direction:column; line-height:1.05; }
   .brand-name{
