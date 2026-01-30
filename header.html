@@ -206,34 +206,28 @@
   }
 
 .brand-mark{
-  width: 36px;
-  height: 36px;
-  border-radius: 14px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
-  background: radial-gradient(
-    circle at 30% 30%,
-    rgba(200,162,75,0.18),
-    rgba(31,122,99,0.35)
-  );
-  border: 1px solid rgba(255,255,255,0.12);
-  box-shadow:
-    inset 0 0 0 1px rgba(255,255,255,0.06),
-    0 12px 28px rgba(0,0,0,0.45);
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 .lotus-svg{
-  width: 22px;
-  height: 22px;
-  fill: none;
-  stroke: rgba(255,255,255,0.85);
+  width: 36px;
+  height: 36px;
+  stroke: rgba(255,255,255,0.92);
   stroke-width: 2;
+  fill: none;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.45));
+  transition: transform 220ms ease;
+  will-change: transform;
 }
 
 .brand-mark:hover .lotus-svg{
   transform: scale(1.04);
-  transition: transform 220ms ease;
 }
 
 @keyframes lotusGlow {
