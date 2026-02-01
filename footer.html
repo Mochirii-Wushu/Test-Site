@@ -1,80 +1,335 @@
-<footer class="px-4 sm:px-6 lg:px-10 pb-10 sm:pb-14">
-  <div class="max-w-6xl mx-auto">
-    <!-- Premium glass footer panel -->
-    <div class="bg-white/5 backdrop-blur-md rounded-3xl px-5 py-6 sm:px-7 sm:py-7">
-      <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
+<!-- footer.html — Mōchirīī (Where Winds Meet) Global Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-wrap">
+    <!-- Top row -->
+    <div class="footer-top">
+      <!-- Brand / blurb -->
+      <div class="footer-brand">
+        <a class="footer-mark" href="./index.html" aria-label="Mōchirīī Home">
+          <svg viewBox="0 0 128 128" class="footer-lotus" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M64 16c8 18 8 30 0 48-8-18-8-30 0-48Z" />
+            <path d="M32 32c16 10 24 20 32 40-18-6-28-16-32-40Z" />
+            <path d="M96 32c-4 24-14 34-32 40 8-20 16-30 32-40Z" />
+            <path d="M24 64c20 6 34 14 40 32-24-4-34-14-40-32Z" />
+            <path d="M104 64c-6 18-16 28-40 32 6-18 20-26 40-32Z" />
+          </svg>
+        </a>
 
-        <!-- Brand block -->
-        <div class="min-w-[260px]">
-          <div class="flex items-center gap-3">
-            <!-- Minimal crest (inline SVG so no extra asset needed) -->
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-2xl bg-black/25">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 3c2.7 3.1 4 6 4 8.7C16 15.2 13.8 18 12 21c-1.8-3-4-5.8-4-9.3C8 9 9.3 6.1 12 3Z" stroke="rgba(255,255,255,0.85)" stroke-width="1.4" />
-                <path d="M5 12.2c2.7-1.2 5.1-1.6 7-1.6s4.3.4 7 1.6" stroke="rgba(255,255,255,0.65)" stroke-width="1.2" />
-              </svg>
-            </span>
-
-            <div>
-              <div class="font-[var(--font-display)] text-2xl leading-none tracking-[0.02em] text-white">
-                Mōchirīī
-              </div>
-              <div class="text-xs sm:text-sm text-white/70 mt-1">
-                Guild hall for Where Winds Meet
-              </div>
-            </div>
-          </div>
-
-          <p class="mt-4 text-sm sm:text-base leading-snug text-white/70 max-w-md">
-            Brief line describing what belongs here: the guild’s tone, values, and what members can expect.
+        <div class="footer-brand-text">
+          <div class="footer-title">Mōchirīī</div>
+          <div class="footer-sub">Where Winds Meet Guild</div>
+          <p class="footer-desc">
+            A quiet, welcoming home for kind people—events, raffles, and steady companionship in and out of the game.
           </p>
 
-          <div class="mt-5 flex flex-wrap items-center gap-3">
-            <a
-              href="https://discord.com/invite/dPafqMwWPK"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 rounded-2xl bg-white text-black px-4 py-2 text-sm hover:bg-white/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-              aria-label="Join the Mōchirīī Discord server"
-            >
-              <span>Discord</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M14 5h5v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M10 14L19 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M19 14v5H5V5h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
-              </svg>
-            </a>
-
-            <a href="./join.html" class="text-sm text-white/80 underline underline-offset-4 decoration-white/25 hover:decoration-white/60">
-              Join steps
-            </a>
-            <a href="./codex.html" class="text-sm text-white/80 underline underline-offset-4 decoration-white/25 hover:decoration-white/60">
-              Codex
-            </a>
+          <div class="footer-actions">
+            <a class="footer-cta" href="./join.html">Join<span class="footer-cta-glint" aria-hidden="true"></span></a>
+            <a class="footer-link" href="./recruitment.html">Recruitment Notes</a>
           </div>
         </div>
+      </div>
 
-        <!-- Nav -->
-        <nav class="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-3 text-sm sm:text-base">
-          <a href="./index.html" class="text-white/80 hover:text-white">Home</a>
-          <a href="./leaders.html" class="text-white/80 hover:text-white">Leaders</a>
-          <a href="./ranks.html" class="text-white/80 hover:text-white">Ranks</a>
-          <a href="./join.html" class="text-white/80 hover:text-white">Join</a>
-          <a href="./codex.html" class="text-white/80 hover:text-white">Codex</a>
-          <a href="#bulletins" class="text-white/80 hover:text-white">Bulletins</a>
-        </nav>
-
-        <!-- Meta / legal -->
-        <div class="lg:text-right">
-          <div class="text-xs sm:text-sm text-white/60">
-            <span id="copyright-text"></span>
-          </div>
-          <div class="mt-2 text-xs sm:text-sm text-white/50 max-w-sm lg:ml-auto">
-            Brief disclaimer text belongs here: community-run guild site and game ownership notice.
-          </div>
+      <!-- Columns -->
+      <div class="footer-cols" aria-label="Footer navigation">
+        <div class="footer-col">
+          <div class="footer-col-title">Guild</div>
+          <a class="footer-nav" href="./leaders.html">Leaders</a>
+          <a class="footer-nav" href="./ranks.html">Ranks</a>
+          <a class="footer-nav" href="./codex.html">Codex</a>
+          <a class="footer-nav" href="./gallery.html">Gallery</a>
         </div>
 
+        <div class="footer-col">
+          <div class="footer-col-title">Updates</div>
+          <a class="footer-nav" href="./announcements.html">Announcements</a>
+          <a class="footer-nav" href="./events.html">Events</a>
+          <a class="footer-nav" href="./raffles.html">Raffles</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Connect</div>
+          <a class="footer-nav" href="https://discord.com/invite/dPafqMwWPK" target="_blank" rel="noopener noreferrer">
+            Discord Invite
+          </a>
+          <span class="footer-note">Tip: press “/” for quick links.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="footer-bottom">
+      <div class="footer-meta">
+        <span id="copyright-text">© Mōchirīī</span>
+        <span class="dot" aria-hidden="true">•</span>
+        <span class="footer-dim">Guild site for Where Winds Meet</span>
+      </div>
+
+      <div class="footer-mini">
+        <a class="footer-mini-link" href="./index.html">Home</a>
+        <span class="dot" aria-hidden="true">•</span>
+        <a class="footer-mini-link" href="./join.html">Join</a>
       </div>
     </div>
   </div>
 </footer>
+
+<style>
+  /* Footer uses the same token names your header defines in :root. If the header is included globally,
+     these resolve automatically. This footer also defines gentle fallbacks to keep it standalone-safe. */
+  :root{
+    --ink-0: var(--ink-0, rgba(255,255,255,0.92));
+    --ink-1: var(--ink-1, rgba(255,255,255,0.78));
+    --ink-2: var(--ink-2, rgba(255,255,255,0.60));
+
+    --bg-0: var(--bg-0, rgba(10, 12, 14, 0.82));
+    --bg-1: var(--bg-1, rgba(10, 12, 14, 0.58));
+    --line: var(--line, rgba(255,255,255,0.08));
+
+    --jade: var(--jade, #1f7a63);
+    --lantern: var(--lantern, #c8a24b);
+    --cinnabar: var(--cinnabar, #a83a2a);
+
+    --radius: var(--radius, 18px);
+    --shadow: var(--shadow, 0 18px 55px rgba(0,0,0,0.45));
+    --ease: var(--ease, cubic-bezier(.2,.8,.2,1));
+  }
+
+  .site-footer{
+    border-top: 1px solid var(--line);
+    background:
+      radial-gradient(900px 420px at 20% 10%, rgba(31,122,99,0.10), transparent 58%),
+      radial-gradient(760px 420px at 85% 25%, rgba(200,162,75,0.10), transparent 60%),
+      linear-gradient(180deg, rgba(10,12,14,0.70), rgba(10,12,14,0.90));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .footer-wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 26px 18px 18px;
+  }
+
+  .footer-top{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    gap: 22px;
+  }
+
+  .footer-brand{
+    display:flex;
+    gap: 14px;
+    min-width: 280px;
+    max-width: 520px;
+  }
+
+  .footer-mark{
+    width: 46px;
+    height: 46px;
+    border-radius: 16px;
+    display:grid;
+    place-items:center;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.03);
+    box-shadow: 0 14px 34px rgba(0,0,0,0.30);
+    text-decoration:none;
+  }
+
+  .footer-lotus{
+    width: 34px;
+    height: 34px;
+    fill: none;
+    stroke: rgba(255,255,255,0.90);
+    stroke-width: 2;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.45));
+    opacity: 0.92;
+  }
+
+  .footer-brand-text{ display:flex; flex-direction:column; gap: 6px; }
+  .footer-title{
+    color: var(--ink-0);
+    font-weight: 650;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+  }
+  .footer-sub{
+    color: var(--ink-2);
+    font-size: 12px;
+    margin-top: -2px;
+  }
+  .footer-desc{
+    color: rgba(255,255,255,0.72);
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 6px 0 0;
+  }
+
+  .footer-actions{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-cta{
+    position: relative;
+    text-decoration:none;
+    color: rgba(10,12,14,0.92);
+    font-weight: 650;
+    font-size: 13px;
+    padding: 11px 14px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(200,162,75,1), rgba(235,210,140,0.96));
+    box-shadow: 0 16px 40px rgba(0,0,0,0.34);
+    overflow:hidden;
+    transition: transform 180ms var(--ease), filter 180ms var(--ease);
+  }
+
+  .footer-cta:hover{
+    transform: translateY(-0.75px);
+    filter: saturate(1.05);
+  }
+
+  .footer-cta:focus-visible{
+    outline:none;
+    box-shadow: 0 0 0 3px rgba(200,162,75,0.28), 0 16px 40px rgba(0,0,0,0.34);
+  }
+
+  .footer-cta-glint{
+    position:absolute;
+    inset: -40% -20%;
+    background: radial-gradient(closest-side, rgba(255,255,255,0.55), transparent 60%);
+    transform: translateX(-35%) rotate(18deg);
+    opacity: 0.35;
+    transition: transform 550ms var(--ease), opacity 550ms var(--ease);
+    pointer-events:none;
+  }
+
+  .footer-cta:hover .footer-cta-glint{
+    transform: translateX(35%) rotate(18deg);
+    opacity: 0.42;
+  }
+
+  .footer-link{
+    text-decoration:none;
+    color: rgba(255,255,255,0.74);
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.03);
+    transition: background 180ms var(--ease), transform 180ms var(--ease), color 180ms var(--ease);
+  }
+
+  .footer-link:hover{
+    background: rgba(31,122,99,0.14);
+    color: var(--ink-0);
+    transform: translateY(-0.5px);
+  }
+
+  .footer-cols{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    width: min(640px, 100%);
+    padding: 10px;
+    border-radius: calc(var(--radius) + 8px);
+    border: 1px solid rgba(255,255,255,0.10);
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    box-shadow: 0 14px 34px rgba(0,0,0,0.22);
+  }
+
+  .footer-col{ padding: 8px 10px; }
+  .footer-col-title{
+    color: var(--ink-0);
+    font-weight: 650;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    opacity: 0.92;
+  }
+
+  .footer-nav{
+    display:block;
+    text-decoration:none;
+    color: rgba(255,255,255,0.72);
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: background 180ms var(--ease), transform 180ms var(--ease), color 180ms var(--ease), border-color 180ms var(--ease);
+  }
+
+  .footer-nav:hover{
+    background: rgba(200,162,75,0.10);
+    border-color: rgba(255,255,255,0.10);
+    color: var(--ink-0);
+    transform: translateY(-0.5px);
+  }
+
+  .footer-note{
+    display:block;
+    color: rgba(255,255,255,0.52);
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .footer-bottom{
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .footer-meta{
+    color: rgba(255,255,255,0.70);
+    font-size: 12px;
+    display:flex;
+    align-items:center;
+    gap: 10px;
+  }
+
+  .footer-dim{ color: rgba(255,255,255,0.50); }
+
+  .footer-mini{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    color: rgba(255,255,255,0.55);
+    font-size: 12px;
+  }
+
+  .footer-mini-link{
+    color: rgba(255,255,255,0.70);
+    text-decoration:none;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.03);
+    transition: background 180ms var(--ease), color 180ms var(--ease), transform 180ms var(--ease);
+  }
+
+  .footer-mini-link:hover{
+    background: rgba(31,122,99,0.14);
+    color: var(--ink-0);
+    transform: translateY(-0.5px);
+  }
+
+  .dot{ opacity: 0.55; }
+
+  @media (max-width: 1020px){
+    .footer-top{ flex-direction: column; }
+    .footer-brand{ max-width: 100%; }
+    .footer-cols{ width: 100%; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    * { transition: none !important; }
+  }
+</style>
